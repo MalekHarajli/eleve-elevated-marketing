@@ -24,19 +24,20 @@ const Contact = () => {
     <main>
       <Helmet>
         <title>Contact | Elevé Marketing — Book Your Free Consultation</title>
-        <meta name="description" content="Let’s grow your business. Book your free consultation today to see how Elevé Marketing can elevate your brand with Meta Ads and social media." />
+        <meta name="description" content="Let’s grow your business in Detroit. Book your free consultation today to see how Elevé Marketing can elevate your brand with Meta Ads and social media." />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Elevé Marketing",
           url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
+          areaServed: "Detroit, MI",
           contactPoint: [{
             "@type": "ContactPoint",
             contactType: "sales",
-            telephone: "+1-555-123-4567",
-            email: "hello@eleve-marketing.com",
-            areaServed: "Local",
+            telephone: "+1-313-970-5903",
+            email: "EleveMarketing@gmail.com",
+            areaServed: "Detroit, MI",
             availableLanguage: ["English"]
           }]
         })}</script>
@@ -45,7 +46,7 @@ const Contact = () => {
       <section className="container mx-auto py-16">
         <header className="max-w-2xl mb-8">
           <h1 className="text-4xl md:text-5xl font-semibold mb-3">Let’s Grow Your Business</h1>
-          <p className="text-lg text-muted-foreground">Book your free consultation today and find out how Elevé Marketing can elevate your brand.</p>
+          <p className="text-lg text-muted-foreground">Book your free consultation today and find out how Elevé Marketing can elevate your brand in Detroit.</p>
         </header>
 
         <div className="grid lg:grid-cols-2 gap-10">
@@ -81,14 +82,14 @@ const Contact = () => {
             <div className="border rounded-lg p-6 bg-card">
               <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-center gap-2"><Phone size={16} /> (555) 123-4567</li>
-                <li className="flex items-center gap-2"><Mail size={16} /> hello@eleve-marketing.com</li>
+                <li className="flex items-center gap-2"><Phone size={16} /> (313) 970-5903</li>
+                <li className="flex items-center gap-2"><Mail size={16} /> EleveMarketing@gmail.com</li>
               </ul>
             </div>
             <div className="border rounded-lg overflow-hidden">
               <iframe
-                title="Elevé Marketing Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019197125166!2d-122.4194153846811!3d37.7749297797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b0b0bcd%3A0x4b0b0b0b0b0b0b0b!2sDowntown%20San%20Francisco!5e0!3m2!1sen!2sus!4v1618354680492!5m2!1sen!2sus"
+                title="Elevé Marketing — Detroit, MI"
+                src="https://maps.google.com/maps?q=Detroit%2C%20MI&t=&z=12&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="300"
                 loading="lazy"

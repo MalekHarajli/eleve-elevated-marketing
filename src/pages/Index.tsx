@@ -9,14 +9,15 @@ const Index = () => {
     <main>
       <Helmet>
         <title>Marketing Elevated | Elevé Marketing — Social Media Marketing & Meta Ads</title>
-        <meta name="description" content="Elevé Marketing: social media marketing and Meta Ads agency helping local businesses grow with high-ROI ad campaigns and consistent content." />
-        <meta name="keywords" content="social media marketing, advertising agency, Meta Ads, local business growth" />
+        <meta name="description" content="Elevé Marketing: Detroit social media marketing and Meta Ads agency helping local businesses grow with high-ROI campaigns and consistent content." />
+        <meta name="keywords" content="Detroit social media marketing, Detroit advertising agency, Meta Ads, local business growth" />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Elevé Marketing",
           url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
+          areaServed: "Detroit, MI",
           sameAs: []
         })}</script>
       </Helmet>

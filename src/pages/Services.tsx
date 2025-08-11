@@ -34,8 +34,8 @@ const Services = () => {
   return (
     <main>
       <Helmet>
-        <title>Services | Elevé Marketing — Social Media Marketing & Meta Ads</title>
-        <meta name="description" content="Growth-focused services: Meta Ads management, social media management, and website creation. Book a free consultation for your custom growth plan." />
+        <title>Services | Elevé Marketing — Detroit Social Media Marketing & Meta Ads</title>
+        <meta name="description" content="Detroit growth-focused services: Meta Ads, social media management, and website creation. Book a free consultation for your custom growth plan." />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
