@@ -37,6 +37,15 @@ const Services = () => {
         <title>Services | Elevé Marketing — Social Media Marketing & Meta Ads</title>
         <meta name="description" content="Growth-focused services: Meta Ads management, social media management, and website creation. Book a free consultation for your custom growth plan." />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Meta Ads Management", serviceType: "Advertising", description: "Audience targeting, creative & copy, weekly optimization, reporting" }},
+            { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Social Media Management", serviceType: "Social Media", description: "3 branded posts/week, seasonal campaigns, engagement, analytics" }},
+            { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Website Creation & Maintenance", serviceType: "Web Design", description: "Responsive design, SEO setup, conversion pages, monthly upkeep" }},
+          ]
+        })}</script>
       </Helmet>
 
       <section className="container mx-auto py-16">

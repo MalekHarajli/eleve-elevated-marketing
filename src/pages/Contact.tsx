@@ -26,6 +26,20 @@ const Contact = () => {
         <title>Contact | Elevé Marketing — Book Your Free Consultation</title>
         <meta name="description" content="Let’s grow your business. Book your free consultation today to see how Elevé Marketing can elevate your brand with Meta Ads and social media." />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Elevé Marketing",
+          url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
+          contactPoint: [{
+            "@type": "ContactPoint",
+            contactType: "sales",
+            telephone: "+1-555-123-4567",
+            email: "hello@eleve-marketing.com",
+            areaServed: "Local",
+            availableLanguage: ["English"]
+          }]
+        })}</script>
       </Helmet>
 
       <section className="container mx-auto py-16">
