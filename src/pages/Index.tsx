@@ -8,16 +8,18 @@ const Index = () => {
   return (
     <main>
       <Helmet>
-        <title>Marketing Elevated | Elevé Marketing — Social Media Marketing & Meta Ads</title>
-        <meta name="description" content="Elevé Marketing: Detroit social media marketing and Meta Ads agency helping local businesses grow with high-ROI campaigns and consistent content." />
-        <meta name="keywords" content="Detroit social media marketing, Detroit advertising agency, Meta Ads, local business growth" />
+        <title>SMMA Agency | Facebook Ads Manager | Instagram Marketing Agency | Elevé Marketing</title>
+        <meta name="description" content="Top SMMA agency specializing in Facebook ads manager services, Instagram marketing, and social media marketing agency solutions. ROI-focused marketing agency near me." />
+        <meta name="keywords" content="SMMA, social media marketing agency, Facebook ads manager, Instagram marketing agency, marketing agency near me, digital marketing agency, social media ads, Meta ads manager" />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Elevé Marketing",
+          description: "Leading SMMA agency and Facebook ads manager specializing in social media marketing agency services",
           url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
-          areaServed: "Detroit, MI",
+          serviceType: ["Social Media Marketing Agency", "Facebook Ads Manager", "Instagram Marketing", "SMMA Services", "Digital Marketing Agency"],
+          areaServed: ["United States", "Detroit, MI"],
           sameAs: []
         })}</script>
       </Helmet>
@@ -33,9 +35,9 @@ const Index = () => {
         <div className="absolute inset-0">
           <div className="container mx-auto h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <h1 className="text-5xl md:text-6xl font-semibold mb-4">Marketing Elevated.</h1>
+              <h1 className="text-5xl md:text-6xl font-semibold mb-4">SMMA Agency & Facebook Ads Manager</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                Helping brands rise above the noise through data-driven advertising and impactful social media.
+                Premier social media marketing agency specializing in Facebook ads manager services, Instagram marketing, and high-ROI digital campaigns.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Button asChild className="btn-glow">
@@ -53,18 +55,18 @@ const Index = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <article className="border rounded-lg p-6 hover-scale bg-card">
             <BarChart3 className="text-primary mb-3" />
-            <h3 className="text-xl font-semibold mb-2">High-ROI Ad Campaigns</h3>
-            <p className="text-muted-foreground">Meta Ads built to convert. We obsess over targeting, creative, and optimization to maximize return.</p>
+            <h3 className="text-xl font-semibold mb-2">Expert Facebook Ads Manager</h3>
+            <p className="text-muted-foreground">Professional Facebook ads manager services with advanced Meta advertising strategies. Specialized Instagram marketing and social media ads optimization.</p>
           </article>
           <article className="border rounded-lg p-6 hover-scale bg-card">
             <Users className="text-primary mb-3" />
-            <h3 className="text-xl font-semibold mb-2">Consistent Social Media Growth</h3>
-            <p className="text-muted-foreground">Stay top-of-mind with engaging, on-brand content that builds community and drives action.</p>
+            <h3 className="text-xl font-semibold mb-2">Full-Service SMMA Solutions</h3>
+            <p className="text-muted-foreground">Complete social media marketing agency services including content creation, community management, and strategic SMMA growth systems.</p>
           </article>
           <article className="border rounded-lg p-6 hover-scale bg-card">
             <Cog className="text-primary mb-3" />
-            <h3 className="text-xl font-semibold mb-2">Done-for-You Marketing Systems</h3>
-            <p className="text-muted-foreground">From strategy to reporting, we set up the systems so you can focus on running your business.</p>
+            <h3 className="text-xl font-semibold mb-2">Marketing Agency Near Me</h3>
+            <p className="text-muted-foreground">Your local digital marketing agency partner providing end-to-end marketing solutions, from strategy to execution and reporting.</p>
           </article>
         </div>
       </section>

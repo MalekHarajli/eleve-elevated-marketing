@@ -34,41 +34,41 @@ const Services = () => {
   return (
     <main>
       <Helmet>
-        <title>Services | Elevé Marketing — Detroit Social Media Marketing & Meta Ads</title>
-        <meta name="description" content="Detroit growth-focused services: Meta Ads, social media management, and website creation. Book a free consultation for your custom growth plan." />
+        <title>SMMA Services | Facebook Ads Manager | Social Media Marketing Agency | Elevé</title>
+        <meta name="description" content="Professional SMMA agency services including Facebook ads manager, Instagram marketing, social media advertising, and digital marketing agency solutions for businesses." />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Meta Ads Management", serviceType: "Advertising", description: "Audience targeting, creative & copy, weekly optimization, reporting" }},
-            { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Social Media Management", serviceType: "Social Media", description: "3 branded posts/week, seasonal campaigns, engagement, analytics" }},
-            { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Website Creation & Maintenance", serviceType: "Web Design", description: "Responsive design, SEO setup, conversion pages, monthly upkeep" }},
+            { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Facebook Ads Manager Services", serviceType: "SMMA", description: "Expert Facebook ads manager with Meta advertising, Instagram marketing, and social media ads optimization" }},
+            { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Social Media Marketing Agency", serviceType: "SMMA", description: "Full-service SMMA solutions including content creation, community management, and strategic growth" }},
+            { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Digital Marketing Agency Services", serviceType: "Marketing Agency", description: "Complete marketing agency near me services with responsive design, SEO, and conversion optimization" }},
           ]
         })}</script>
       </Helmet>
 
       <section className="container mx-auto py-16">
         <header className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-4">Growth-Focused Marketing Services</h1>
-          <p className="text-lg text-muted-foreground">We deliver growth-focused marketing services designed to bring fast results and long-term retention. Get your custom growth plan — no pricing page, just strategy.</p>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-4">SMMA Agency & Facebook Ads Manager Services</h1>
+          <p className="text-lg text-muted-foreground">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
         </header>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           <ServiceCard
             Icon={Megaphone}
-            title="Meta Ads Management"
-            points={["Audience targeting & segmentation","High-converting creative & copy","Weekly optimization","Transparent reporting"]}
+            title="Facebook Ads Manager"
+            points={["Expert Facebook ads manager services","Instagram marketing campaigns","Meta advertising optimization","Advanced social media ads targeting"]}
           />
           <ServiceCard
             Icon={Users}
-            title="Social Media Management"
-            points={["3 branded posts/week","Seasonal campaigns","Community engagement","Monthly analytics"]}
+            title="SMMA Solutions"
+            points={["Complete social media marketing agency services","Strategic SMMA growth systems","Content creation & community management","Marketing agency near me support"]}
           />
           <ServiceCard
             Icon={Layout}
-            title="Website Creation & Maintenance"
-            points={["Responsive design","SEO setup","Conversion-focused pages","Monthly upkeep"]}
+            title="Digital Marketing Agency"
+            points={["Full-service marketing agency solutions","SEO & conversion optimization","Professional web design","Ongoing digital marketing support"]}
           />
         </div>
 

@@ -23,21 +23,23 @@ const Contact = () => {
   return (
     <main>
       <Helmet>
-        <title>Contact | Elevé Marketing — Book Your Free Consultation</title>
-        <meta name="description" content="Let’s grow your business in Detroit. Book your free consultation today to see how Elevé Marketing can elevate your brand with Meta Ads and social media." />
+        <title>Contact SMMA Agency | Facebook Ads Manager | Marketing Agency Near Me</title>
+        <meta name="description" content="Contact our SMMA agency for Facebook ads manager services, Instagram marketing, and social media marketing agency solutions. Free consultation with top digital marketing agency." />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Elevé Marketing",
+          description: "Leading SMMA agency and Facebook ads manager specializing in social media marketing agency services",
           url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
-          areaServed: "Detroit, MI",
+          areaServed: ["United States", "Detroit, MI"],
+          serviceType: ["SMMA Services", "Facebook Ads Manager", "Instagram Marketing", "Social Media Marketing Agency"],
           contactPoint: [{
             "@type": "ContactPoint",
             contactType: "sales",
             telephone: "+1-313-970-5903",
             email: "EleveMarketing@gmail.com",
-            areaServed: "Detroit, MI",
+            areaServed: ["United States", "Detroit, MI"],
             availableLanguage: ["English"]
           }]
         })}</script>
@@ -45,8 +47,8 @@ const Contact = () => {
 
       <section className="container mx-auto py-16">
         <header className="max-w-2xl mb-8">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-3">Let’s Grow Your Business</h1>
-          <p className="text-lg text-muted-foreground">Book your free consultation today and find out how Elevé Marketing can elevate your brand in Detroit.</p>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-3">Contact Our SMMA Agency</h1>
+          <p className="text-lg text-muted-foreground">Get expert Facebook ads manager services and social media marketing agency solutions. Free consultation with a top-rated marketing agency near me.</p>
         </header>
 
         <div className="grid lg:grid-cols-2 gap-10">
