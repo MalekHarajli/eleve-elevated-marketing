@@ -92,24 +92,72 @@ const Index = () => {
       </section>
 
       {/* Process */}
-      <section className="container mx-auto pb-16">
-        <div className="border rounded-lg p-8 bg-card">
-          <h2 className="text-2xl font-semibold mb-6">How We Drive Results</h2>
-          <div className="flex flex-col md:flex-row items-center gap-4 text-muted-foreground">
-            <div className="text-center">
-              <div className="text-foreground font-medium mb-1">Ads</div>
-              <p className="max-w-[22ch]">Targeted Meta Ads reach ready-to-buy audiences.</p>
-            </div>
-            <ArrowRight className="hidden md:block text-primary" />
-            <div className="text-center">
-              <div className="text-foreground font-medium mb-1">Content</div>
-              <p className="max-w-[22ch]">Consistent, branded content that nurtures trust.</p>
-            </div>
-            <ArrowRight className="hidden md:block text-primary" />
-            <div className="text-center">
-              <div className="text-foreground font-medium mb-1">Measurable ROI</div>
-              <p className="max-w-[22ch]">Transparent reporting tied to real business outcomes.</p>
-            </div>
+      <section className="bg-background">
+        <div className="container mx-auto py-16">
+          <h2 className="text-2xl font-semibold mb-8">How We Drive Results</h2>
+
+          {/* Desktop: horizontal steps with gold connectors */}
+          <div className="hidden md:flex items-stretch">
+            {/* Step 1 */}
+            <article className="flex-1 border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Strategy & Onboarding</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 1 — Strategy & Onboarding</div>
+              <p className="text-muted-foreground">Every free consultation begins with understanding your goals, audience, and competition. We set up tracking tools, align on a custom marketing plan, and prepare your brand for high-impact advertising.</p>
+            </article>
+            <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
+
+            {/* Step 2 */}
+            <article className="flex-1 border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">We launch campaigns that get in front of ready-to-buy customers.</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 2 — Targeted Ads</div>
+              <p className="text-muted-foreground">We create and manage high-ROI Meta Ads campaigns using precise targeting, compelling creative, and weekly optimization to maximize your budget.</p>
+            </article>
+            <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
+
+            {/* Step 3 */}
+            <article className="flex-1 border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">We keep your audience engaged and growing.</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 3 — Consistent Content</div>
+              <p className="text-muted-foreground">Our team delivers 3 high-quality, branded social media posts per week, designed to increase awareness, engagement, and trust with your followers.</p>
+            </article>
+            <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
+
+            {/* Step 4 */}
+            <article className="flex-1 border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">We refine, improve, and prove results.</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 4 — Optimization & Reporting</div>
+              <p className="text-muted-foreground">We continuously monitor and adjust campaigns for better performance. Monthly transparent reports show exactly how your marketing translates to measurable business outcomes.</p>
+            </article>
+          </div>
+
+          {/* Mobile: stacked steps with vertical connectors */}
+          <div className="md:hidden flex flex-col">
+            <article className="border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Strategy & Onboarding</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 1 — Strategy & Onboarding</div>
+              <p className="text-muted-foreground">Every free consultation begins with understanding your goals, audience, and competition. We set up tracking tools, align on a custom marketing plan, and prepare your brand for high-impact advertising.</p>
+            </article>
+            <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
+
+            <article className="border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">We launch campaigns that get in front of ready-to-buy customers.</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 2 — Targeted Ads</div>
+              <p className="text-muted-foreground">We create and manage high-ROI Meta Ads campaigns using precise targeting, compelling creative, and weekly optimization to maximize your budget.</p>
+            </article>
+            <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
+
+            <article className="border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">We keep your audience engaged and growing.</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 3 — Consistent Content</div>
+              <p className="text-muted-foreground">Our team delivers 3 high-quality, branded social media posts per week, designed to increase awareness, engagement, and trust with your followers.</p>
+            </article>
+            <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
+
+            <article className="border rounded-lg p-6 bg-card">
+              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">We refine, improve, and prove results.</div>
+              <div className="text-foreground font-semibold text-lg mb-2">Step 4 — Optimization & Reporting</div>
+              <p className="text-muted-foreground">We continuously monitor and adjust campaigns for better performance. Monthly transparent reports show exactly how your marketing translates to measurable business outcomes.</p>
+            </article>
           </div>
         </div>
       </section>
