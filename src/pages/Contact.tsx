@@ -22,28 +22,43 @@ const Contact = () => {
 
   return (
     <main>
-      <Helmet>
-        <title>Contact SMMA Agency | Facebook Ads Manager | Marketing Agency Near Me</title>
-        <meta name="description" content="Contact our SMMA agency for Facebook ads manager services, Instagram marketing, and social media marketing agency solutions. Free consultation with top digital marketing agency." />
-        <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Elevé Marketing",
-          description: "Leading SMMA agency and Facebook ads manager specializing in social media marketing agency services",
-          url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
-          areaServed: ["United States", "Detroit, MI"],
-          serviceType: ["SMMA Services", "Facebook Ads Manager", "Instagram Marketing", "Social Media Marketing Agency"],
-          contactPoint: [{
-            "@type": "ContactPoint",
-            contactType: "sales",
-            telephone: "+1-313-970-5903",
-            email: "EleveMarketing@gmail.com",
+        <Helmet>
+          <title>Contact Elevé Marketing — SMMA & Ads Manager</title>
+          <meta name="description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
+          <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
+
+          {/* Open Graph */}
+          <meta property="og:title" content="Contact Elevé Marketing — SMMA & Ads Manager" />
+          <meta property="og:description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
+          <meta property="og:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Contact Elevé Marketing — SMMA & Ads Manager" />
+          <meta name="twitter:description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
+          <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
+
+          {/* Structured Data */}
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Elevé Marketing",
+            description: "Leading SMMA agency and Facebook ads manager specializing in social media marketing agency services",
+            url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
             areaServed: ["United States", "Detroit, MI"],
-            availableLanguage: ["English"]
-          }]
-        })}</script>
-      </Helmet>
+            serviceType: ["SMMA Services", "Facebook Ads Manager", "Instagram Marketing", "Social Media Marketing Agency"],
+            contactPoint: [{
+              "@type": "ContactPoint",
+              contactType: "sales",
+              telephone: "+1-313-970-5903",
+              email: "EleveMarketing@gmail.com",
+              areaServed: ["United States", "Detroit, MI"],
+              availableLanguage: ["English"]
+            }]
+          })}</script>
+        </Helmet>
 
       <section className="container mx-auto py-16">
         <header className="max-w-2xl mb-8">

@@ -7,22 +7,42 @@ import { BarChart3, Users, Cog, ArrowRight } from "lucide-react";
 const Index = () => {
   return (
     <main>
-      <Helmet>
-        <title>SMMA Agency | Facebook Ads Manager | Instagram Marketing Agency | Elevé Marketing</title>
-        <meta name="description" content="Top SMMA agency specializing in Facebook ads manager services, Instagram marketing, and social media marketing agency solutions. ROI-focused marketing agency near me." />
-        <meta name="keywords" content="SMMA, social media marketing agency, Facebook ads manager, Instagram marketing agency, marketing agency near me, digital marketing agency, social media ads, Meta ads manager" />
-        <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Elevé Marketing",
-          description: "Leading SMMA agency and Facebook ads manager specializing in social media marketing agency services",
-          url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
-          serviceType: ["Social Media Marketing Agency", "Facebook Ads Manager", "Instagram Marketing", "SMMA Services", "Digital Marketing Agency"],
-          areaServed: ["United States", "Detroit, MI"],
-          sameAs: []
-        })}</script>
-      </Helmet>
+        <Helmet>
+          <title>Elevé Marketing — SMMA & Facebook Ads Manager</title>
+          <meta name="description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
+          <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
+
+          {/* Open Graph */}
+          <meta property="og:title" content="Elevé Marketing — SMMA & Facebook Ads Manager" />
+          <meta property="og:description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
+          <meta property="og:image" content={typeof window !== 'undefined' ? new URL(heroImage, window.location.origin).toString() : 'https://eleve-marketing.example.com/og.jpg'} />
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Elevé Marketing — SMMA & Facebook Ads Manager" />
+          <meta name="twitter:description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
+          <meta name="twitter:image" content={typeof window !== 'undefined' ? new URL(heroImage, window.location.origin).toString() : 'https://eleve-marketing.example.com/og.jpg'} />
+
+          {/* Structured Data */}
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Elevé Marketing",
+            description: "SMMA and Facebook ads manager delivering ROI-focused campaigns.",
+            url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
+            logo: typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png',
+            areaServed: ["United States", "Detroit, MI"],
+            contactPoint: [{
+              "@type": "ContactPoint",
+              contactType: "sales",
+              telephone: "+1-313-970-5903",
+              email: "EleveMarketing@gmail.com",
+              availableLanguage: ["English"]
+            }]
+          })}</script>
+        </Helmet>
 
       {/* Hero */}
       <section className="relative">

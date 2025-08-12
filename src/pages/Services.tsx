@@ -33,20 +33,35 @@ const ServiceCard = ({
 const Services = () => {
   return (
     <main>
-      <Helmet>
-        <title>SMMA Services | Facebook Ads Manager | Social Media Marketing Agency | Elevé</title>
-        <meta name="description" content="Professional SMMA agency services including Facebook ads manager, Instagram marketing, social media advertising, and digital marketing agency solutions for businesses." />
-        <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ItemList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Facebook Ads Manager Services", serviceType: "SMMA", description: "Expert Facebook ads manager with Meta advertising, Instagram marketing, and social media ads optimization" }},
-            { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Social Media Marketing Agency", serviceType: "SMMA", description: "Full-service SMMA solutions including content creation, community management, and strategic growth" }},
-            { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Digital Marketing Agency Services", serviceType: "Marketing Agency", description: "Complete marketing agency near me services with responsive design, SEO, and conversion optimization" }},
-          ]
-        })}</script>
-      </Helmet>
+        <Helmet>
+          <title>Services — SMMA, Facebook & Instagram Ads | Elevé</title>
+          <meta name="description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
+          <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
+
+          {/* Open Graph */}
+          <meta property="og:title" content="Services — SMMA, Facebook & Instagram Ads | Elevé" />
+          <meta property="og:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
+          <meta property="og:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Services — SMMA, Facebook & Instagram Ads | Elevé" />
+          <meta name="twitter:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
+          <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
+
+          {/* Structured Data */}
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Facebook Ads Manager Services", serviceType: "SMMA", description: "Expert Facebook ads manager with Meta advertising, Instagram marketing, and social media ads optimization" }},
+              { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Social Media Marketing Agency", serviceType: "SMMA", description: "Full-service SMMA solutions including content creation, community management, and strategic growth" }},
+              { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Digital Marketing Agency Services", serviceType: "Marketing Agency", description: "Complete marketing agency near me services with responsive design, SEO, and conversion optimization" }},
+            ]
+          })}</script>
+        </Helmet>
 
       <section className="container mx-auto py-16">
         <header className="max-w-3xl">
