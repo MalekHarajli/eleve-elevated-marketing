@@ -9,21 +9,21 @@ const Index = () => {
   return (
     <main>
         <Helmet>
-          <title>AutoAdvance Marketing — SMMA & Facebook Ads Manager</title>
-          <meta name="description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
+          <title>High-Performance Ads & Social Media Growth | AutoAdvance Marketing</title>
+          <meta name="description" content="Social media marketing agency for Facebook, Instagram, and Google ads management, branded content, and high-converting websites. Book a free consultation." />
           <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
 
           {/* Open Graph */}
-          <meta property="og:title" content="AutoAdvance Marketing — SMMA & Facebook Ads Manager" />
-          <meta property="og:description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
+          <meta property="og:title" content="High-Performance Ads & Social Media Growth | AutoAdvance Marketing" />
+          <meta property="og:description" content="Social media marketing agency for Facebook, Instagram, and Google ads management, branded content, and high-converting websites. Book a free consultation." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
           <meta property="og:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="AutoAdvance Marketing — SMMA & Facebook Ads Manager" />
-          <meta name="twitter:description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
+          <meta name="twitter:title" content="High-Performance Ads & Social Media Growth | AutoAdvance Marketing" />
+          <meta name="twitter:description" content="Social media marketing agency for Facebook, Instagram, and Google ads management, branded content, and high-converting websites. Book a free consultation." />
           <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
 
           {/* Structured Data */}
@@ -56,15 +56,17 @@ const Index = () => {
         <div className="absolute inset-0">
           <div className="container mx-auto h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <h1 className="text-5xl md:text-6xl font-semibold mb-4">SMMA Agency & Facebook Ads Manager</h1>
+              <h1 className="text-5xl md:text-6xl font-semibold mb-4">High-Performance Ad Campaigns & Social Media Growth</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                Premier social media marketing agency specializing in Facebook ads manager services, Instagram marketing, and high-ROI digital campaigns.
+                We help local businesses dominate their market with precision-targeted Facebook, Instagram, and Google Ads — backed by consistent, branded social media content and high-converting websites. Your social media marketing agency for Facebook ads manager, Instagram marketing, Google ads management, and full-funnel digital marketing services.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Button asChild className="btn-glow">
                   <Link to="/contact">Book Your Free Consultation</Link>
                 </Button>
-                <Link to="/services" className="story-link">Explore Services</Link>
+                <Button asChild variant="outline">
+                  <Link to="/services">Explore Services</Link>
+                </Button>
               </div>
             </div>
           </div>
