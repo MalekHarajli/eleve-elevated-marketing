@@ -52,8 +52,8 @@ const Contact = () => {
             contactPoint: [{
               "@type": "ContactPoint",
               contactType: "sales",
-              telephone: "+1-313-970-5903",
-              email: "EleveMarketing@gmail.com",
+              telephone: "+1(313)-970-5903",
+              email: "autoadvancem@gmail.com",
               areaServed: ["United States", "Detroit, MI"],
               availableLanguage: ["English"]
             }]
@@ -99,8 +99,8 @@ const Contact = () => {
             <div className="border rounded-lg p-6 bg-card">
               <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-center gap-2"><Phone size={16} /> (313) 970-5903</li>
-                <li className="flex items-center gap-2"><Mail size={16} /> EleveMarketing@gmail.com</li>
+                <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>
+                <li className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</li>
               </ul>
             </div>
             <div className="border rounded-lg overflow-hidden">

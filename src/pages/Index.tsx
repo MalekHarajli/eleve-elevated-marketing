@@ -38,8 +38,8 @@ const Index = () => {
             contactPoint: [{
               "@type": "ContactPoint",
               contactType: "sales",
-              telephone: "+1-313-970-5903",
-              email: "EleveMarketing@gmail.com",
+              telephone: "+1(313)-970-5903",
+              email: "autoadvancem@gmail.com",
               availableLanguage: ["English"]
             }]
           })}</script>

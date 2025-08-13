@@ -26,8 +26,8 @@ const SiteFooter = () => {
         <div>
           <h4 className="font-medium mb-3">Contact</h4>
           <ul className="space-y-2 text-muted-foreground">
-            <li className="flex items-center gap-2"><Phone size={16} /> (313) 970-5903</li>
-            <li className="flex items-center gap-2"><Mail size={16} /> EleveMarketing@gmail.com</li>
+            <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>
+            <li className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</li>
           </ul>
         </div>
       </div>
