@@ -84,12 +84,12 @@ const ReviewsCarousel: React.FC = () => {
           ))}
         </CarouselContent>
         <CarouselPrevious
-          className="left-2 md:-left-12 bg-background/90 backdrop-blur border border-border"
+          className="hidden"
           aria-label="Previous reviews"
           onClick={handlePrevGroup}
         />
         <CarouselNext
-          className="right-2 md:-right-12 bg-background/90 backdrop-blur border border-border"
+          className="hidden"
           aria-label="Next reviews"
           onClick={handleNextGroup}
         />
