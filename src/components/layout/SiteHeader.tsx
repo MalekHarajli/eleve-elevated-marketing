@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Instagram } from "lucide-react";
 
 const SiteHeader = () => {
   return (
@@ -15,6 +16,17 @@ const SiteHeader = () => {
           <NavLink to="/contact" className={({ isActive }) => `story-link ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Contact</NavLink>
         </div>
         <div className="flex items-center gap-3">
+          <a
+            href="https://www.instagram.com/AutoAdvanceMarketing"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="AutoAdvance Marketing on Instagram"
+            title="AutoAdvance Marketing on Instagram"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Instagram />
+            <span className="sr-only">Instagram</span>
+          </a>
           <Button asChild className="btn-glow">
             <Link to="/contact">Book Your Free Consultation</Link>
           </Button>
