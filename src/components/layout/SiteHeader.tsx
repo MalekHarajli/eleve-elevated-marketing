@@ -6,9 +6,9 @@ const SiteHeader = () => {
   return (
     <header className="border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <nav className="container mx-auto flex items-center justify-between py-4">
-        <Link to="/" className="flex items-center gap-2 min-w-0" aria-label="AutoAdvance Marketing Home">
+        <Link to="/" className="flex items-center gap-2" aria-label="AutoAdvance Marketing Home">
           <img src="/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png" alt="AutoAdvance Marketing logo" className="h-8 w-8 object-contain" />
-          <span className="text-xl font-semibold tracking-tight truncate sm:whitespace-nowrap max-w-[50vw]">AutoAdvance Marketing</span>
+          <span className="text-xl font-semibold tracking-tight whitespace-nowrap">AutoAdvance Marketing</span>
         </Link>
         <div className="hidden md:flex items-center gap-4">
           <NavLink to="/" className={({ isActive }) => `story-link ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Home</NavLink>
@@ -27,7 +27,7 @@ const SiteHeader = () => {
             <Instagram />
             <span className="sr-only">Instagram</span>
           </a>
-          <Button asChild className="btn-glow hidden sm:inline-flex">
+          <Button asChild className="btn-glow">
             <Link to="/contact">Book Your Free Consultation</Link>
           </Button>
         </div>
