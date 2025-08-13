@@ -71,26 +71,26 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <Label htmlFor="name">Name</Label>
-                <Input id="name" name="name" required placeholder="Jane Doe" />
+                <Input id="name" name="name" required autoComplete="name" />
               </div>
               <div>
                 <Label htmlFor="business">Business Name</Label>
-                <Input id="business" name="business" required placeholder="Elevé Cafe" />
+                <Input id="business" name="business" required autoComplete="organization" />
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" name="email" type="email" required placeholder="you@example.com" />
+                <Input id="email" name="email" type="email" required autoComplete="email" />
               </div>
               <div>
                 <Label htmlFor="phone">Phone</Label>
-                <Input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+                <Input id="phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" />
               </div>
             </div>
             <div>
               <Label htmlFor="message">Message</Label>
-              <Textarea id="message" name="message" required placeholder="Tell us about your goals…" className="min-h-[140px]" />
+              <Textarea id="message" name="message" required className="min-h-[140px]" />
             </div>
             <Button type="submit" className="btn-glow w-full md:w-auto">Book My Free Consultation</Button>
           </form>
