@@ -7,10 +7,12 @@ const ServiceCard = ({
   Icon,
   title,
   points,
+  ctaLabel,
 }: {
   Icon: LucideIcon;
   title: string;
   points: string[];
+  ctaLabel: string;
 }) => (
   <article className="border rounded-lg p-6 hover-scale bg-card">
     <div className="flex items-center gap-3 mb-4">
@@ -24,7 +26,7 @@ const ServiceCard = ({
     </ul>
     <div className="mt-6">
       <Button asChild className="btn-glow">
-        <Link to="/contact">Get Your Free Consultation</Link>
+        <Link to="/contact">{ctaLabel}</Link>
       </Button>
     </div>
   </article>
@@ -72,18 +74,36 @@ const Services = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           <ServiceCard
             Icon={Megaphone}
-            title="Facebook Ads Manager"
-            points={["Expert Facebook ads manager services","Instagram marketing campaigns","Meta advertising optimization","Advanced social media ads targeting"]}
+            title="Meta Ads Management"
+            points={[
+              "Facebook & Instagram ad creation and management",
+              "Advanced audience targeting to reach ready-to-buy customers",
+              "Weekly optimization for maximum ROI",
+              "Transparent performance tracking",
+            ]}
+            ctaLabel="Get Your Free Consultation"
           />
           <ServiceCard
             Icon={Users}
-            title="SMMA Solutions"
-            points={["Complete social media marketing agency services","Strategic SMMA growth systems","Content creation & community management","Marketing agency near me support"]}
+            title="Social Media Management"
+            points={[
+              "3 high-quality branded posts per week",
+              "Engagement and seasonal campaign management",
+              "Content designed to grow awareness and trust",
+              "Monthly analytics reports",
+            ]}
+            ctaLabel="Get Your Free Consultation"
           />
           <ServiceCard
             Icon={Layout}
-            title="Digital Marketing Agency"
-            points={["Full-service marketing agency solutions","SEO & conversion optimization","Professional web design","Ongoing digital marketing support"]}
+            title="Website Creation & Maintenance (Add-On)"
+            points={[
+              "1-page and multi-page website builds",
+              "Responsive design and SEO-friendly setup",
+              "Ongoing updates and maintenance",
+              "Available as an add-on service for marketing clients",
+            ]}
+            ctaLabel="Get Your Custom Growth Plan"
           />
         </div>
 
