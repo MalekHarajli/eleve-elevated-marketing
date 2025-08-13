@@ -22,7 +22,7 @@ const SiteHeader = () => {
             rel="noopener noreferrer"
             aria-label="AutoAdvance Marketing on Instagram"
             title="AutoAdvance Marketing on Instagram"
-            className="hidden lg:inline-flex text-muted-foreground hover:text-primary transition-colors"
+            className="inline-flex text-muted-foreground hover:text-primary transition-colors"
           >
             <Instagram />
             <span className="sr-only">Instagram</span>
