@@ -60,43 +60,43 @@ const Contact = () => {
           })}</script>
         </Helmet>
 
-      <section className="container mx-auto py-16">
+      <section className="container mx-auto px-4 py-16">
         <header className="max-w-2xl mb-8">
           <h1 className="text-4xl md:text-5xl font-semibold mb-3">Contact Our SMMA Agency</h1>
           <p className="text-lg text-muted-foreground">Get expert Facebook ads manager services and social media marketing agency solutions. Free consultation with a top-rated marketing agency near me.</p>
         </header>
 
-        <div className="grid lg:grid-cols-2 gap-10">
-          <form onSubmit={onSubmit} className="space-y-5 border rounded-lg p-6 bg-card">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-10">
+          <form onSubmit={onSubmit} className="space-y-5 border rounded-lg p-5 sm:p-6 bg-card">
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <Label htmlFor="name">Name</Label>
-                <Input id="name" name="name" required autoComplete="name" />
+                <Input id="name" name="name" required autoComplete="name" className="h-11" />
               </div>
               <div>
                 <Label htmlFor="business">Business Name</Label>
-                <Input id="business" name="business" required autoComplete="organization" />
+                <Input id="business" name="business" required autoComplete="organization" className="h-11" />
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" name="email" type="email" required autoComplete="email" />
+                <Input id="email" name="email" type="email" required autoComplete="email" className="h-11" />
               </div>
               <div>
                 <Label htmlFor="phone">Phone</Label>
-                <Input id="phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" />
+                <Input id="phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" className="h-11" />
               </div>
             </div>
             <div>
               <Label htmlFor="message">Message</Label>
-              <Textarea id="message" name="message" required className="min-h-[140px]" />
+              <Textarea id="message" name="message" required className="min-h-[140px] p-3" />
             </div>
             <Button type="submit" className="btn-glow w-full md:w-auto">Book My Free Consultation</Button>
           </form>
 
           <aside className="space-y-6">
-            <div className="border rounded-lg p-6 bg-card">
+            <div className="border rounded-lg p-5 sm:p-6 bg-card">
               <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>

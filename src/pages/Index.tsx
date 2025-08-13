@@ -50,21 +50,21 @@ const Index = () => {
         <img
           src={heroImage}
            alt="Modern, premium business background for AutoAdvance Marketing"
-          className="w-full h-[70vh] md:h-[80vh] object-cover"
+          className="w-full h-[60vh] sm:h-[70vh] md:h-[80vh] object-cover"
         />
         <div className="absolute inset-0 overlay-soft" />
         <div className="absolute inset-0">
-          <div className="container mx-auto h-full flex items-center">
+          <div className="container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <h1 className="text-5xl md:text-6xl font-semibold mb-4">High-ROI Ads & Social Media That Drive Real Growth</h1>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4">High-ROI Ads & Social Media That Drive Real Growth</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
                 Facebook, Instagram, and Google Ads with proven results.
               </p>
-              <div className="mt-8 flex items-center gap-4">
-                <Button asChild className="btn-glow">
+              <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+                <Button asChild className="btn-glow w-full sm:w-auto">
                   <Link to="/contact">Book Your Free Consultation</Link>
                 </Button>
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" className="w-full sm:w-auto">
                   <Link to="/services">Explore Services</Link>
                 </Button>
               </div>
@@ -74,19 +74,19 @@ const Index = () => {
       </section>
 
       {/* Benefits */}
-      <section className="container mx-auto py-16">
-        <div className="grid md:grid-cols-3 gap-8">
-          <article className="border rounded-lg p-6 hover-scale bg-card">
+      <section className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
             <BarChart3 className="text-brand-gold mb-3" />
             <h3 className="text-xl font-semibold mb-2">Targeted Ad Campaign Management</h3>
             <p className="text-muted-foreground">Expert management of Facebook, Instagram, and Google Ads. We create precision-targeted campaigns, optimize weekly for maximum ROI, and reach ready-to-buy customers with compelling ad creative.</p>
           </article>
-          <article className="border rounded-lg p-6 hover-scale bg-card">
+          <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
             <Users className="text-brand-gold mb-3" />
             <h3 className="text-xl font-semibold mb-2">Social Media Management & Growth</h3>
             <p className="text-muted-foreground">Consistent, branded content to grow your audience and build trust. Includes 3 high-quality posts per week, engagement strategies, and seasonal campaigns to keep your brand top-of-mind.</p>
           </article>
-          <article className="border rounded-lg p-6 hover-scale bg-card">
+          <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
             <Cog className="text-brand-gold mb-3" />
             <h3 className="text-xl font-semibold mb-2">Website Creation & Maintenance (Add-On)</h3>
             <p className="text-muted-foreground">Custom, SEO-friendly websites designed to convert visitors into customers. Includes responsive design, ongoing maintenance, and updates to keep your online presence fresh.</p>
@@ -96,7 +96,7 @@ const Index = () => {
 
       {/* Process */}
       <section className="bg-background">
-        <div className="container mx-auto py-16">
+        <div className="container mx-auto px-4 py-16">
           <h2 className="text-2xl font-semibold mb-8">How We Drive Results</h2>
 
           {/* Desktop: horizontal steps with gold connectors */}
@@ -167,7 +167,7 @@ const Index = () => {
 
       {/* Testimonials */}
       <section className="bg-background">
-        <div className="container mx-auto pb-24">
+        <div className="container mx-auto px-4 pb-24">
           <h2 className="text-2xl font-semibold mb-6">What Clients Say</h2>
           <ReviewsCarousel />
         </div>
