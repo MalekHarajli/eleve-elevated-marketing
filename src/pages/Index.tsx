@@ -3,6 +3,7 @@ import heroImage from "@/assets/hero-elevate.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BarChart3, Users, Cog, ArrowRight } from "lucide-react";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 const Index = () => {
   return (
@@ -163,19 +164,10 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="container mx-auto pb-24">
-        <h2 className="text-2xl font-semibold mb-6">What Clients Say</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { quote: "Elevé took our local ads from break-even to profitable in 60 days.", name: "Alex P." },
-            { quote: "Our socials finally reflect our brand — engagement is way up.", name: "Riley C." },
-            { quote: "Clear strategy, seamless execution, and results we can measure.", name: "Morgan D." },
-          ].map((t) => (
-            <blockquote key={t.name} className="border rounded-lg p-6 bg-card hover-scale">
-              <p className="mb-3">“{t.quote}”</p>
-              <cite className="text-muted-foreground not-italic">— {t.name}</cite>
-            </blockquote>
-          ))}
+      <section className="bg-background">
+        <div className="container mx-auto pb-24">
+          <h2 className="text-2xl font-semibold mb-6">What Clients Say</h2>
+          <ReviewsCarousel />
         </div>
       </section>
     </main>
