@@ -23,12 +23,12 @@ const Contact = () => {
   return (
     <main>
         <Helmet>
-          <title>Contact Elevé Marketing — SMMA & Ads Manager</title>
+          <title>Contact AutoAdvance Marketing — SMMA & Ads Manager</title>
           <meta name="description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
           <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
 
           {/* Open Graph */}
-          <meta property="og:title" content="Contact Elevé Marketing — SMMA & Ads Manager" />
+          <meta property="og:title" content="Contact AutoAdvance Marketing — SMMA & Ads Manager" />
           <meta property="og:description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
@@ -36,7 +36,7 @@ const Contact = () => {
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Contact Elevé Marketing — SMMA & Ads Manager" />
+          <meta name="twitter:title" content="Contact AutoAdvance Marketing — SMMA & Ads Manager" />
           <meta name="twitter:description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
           <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
 
@@ -44,7 +44,7 @@ const Contact = () => {
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Elevé Marketing",
+            name: "AutoAdvance Marketing",
             description: "Leading SMMA agency and Facebook ads manager specializing in social media marketing agency services",
             url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
             areaServed: ["United States", "Detroit, MI"],
@@ -105,7 +105,7 @@ const Contact = () => {
             </div>
             <div className="border rounded-lg overflow-hidden">
               <iframe
-                title="Elevé Marketing — Detroit, MI"
+                title="AutoAdvance Marketing — Detroit, MI"
                 src="https://maps.google.com/maps?q=Detroit%2C%20MI&t=&z=12&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="300"

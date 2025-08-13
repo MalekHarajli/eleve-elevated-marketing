@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 
 const reviews: { name: string; quote: string; rating: number }[] = [
-  { name: "Alex P.", quote: "Elevé took our local ads from break-even to profitable in 60 days.", rating: 5 },
+  { name: "Alex P.", quote: "AutoAdvance took our local ads from break-even to profitable in 60 days.", rating: 5 },
   { name: "Riley C.", quote: "Our socials finally reflect our brand — engagement is way up.", rating: 5 },
   { name: "Morgan D.", quote: "Clear strategy, seamless execution, and results we can measure.", rating: 5 },
   { name: "Jordan S.", quote: "Professional team. They know Meta Ads inside out.", rating: 5 },

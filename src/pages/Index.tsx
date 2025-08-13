@@ -9,12 +9,12 @@ const Index = () => {
   return (
     <main>
         <Helmet>
-          <title>Elevé Marketing — SMMA & Facebook Ads Manager</title>
+          <title>AutoAdvance Marketing — SMMA & Facebook Ads Manager</title>
           <meta name="description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
           <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
 
           {/* Open Graph */}
-          <meta property="og:title" content="Elevé Marketing — SMMA & Facebook Ads Manager" />
+          <meta property="og:title" content="AutoAdvance Marketing — SMMA & Facebook Ads Manager" />
           <meta property="og:description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
@@ -22,7 +22,7 @@ const Index = () => {
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Elevé Marketing — SMMA & Facebook Ads Manager" />
+          <meta name="twitter:title" content="AutoAdvance Marketing — SMMA & Facebook Ads Manager" />
           <meta name="twitter:description" content="Top-tier social media marketing agency delivering ROI-focused Meta and Instagram ads. Book your free consultation." />
           <meta name="twitter:image" content={typeof window !== 'undefined' ? new URL(heroImage, window.location.origin).toString() : 'https://eleve-marketing.example.com/og.jpg'} />
 
@@ -30,7 +30,7 @@ const Index = () => {
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Elevé Marketing",
+            name: "AutoAdvance Marketing",
             description: "SMMA and Facebook ads manager delivering ROI-focused campaigns.",
             url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
             logo: typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png',
@@ -49,7 +49,7 @@ const Index = () => {
       <section className="relative">
         <img
           src={heroImage}
-          alt="Modern, premium business background for Elevé Marketing"
+          alt="Modern, premium business background for AutoAdvance Marketing"
           className="w-full h-[70vh] md:h-[80vh] object-cover"
         />
         <div className="absolute inset-0 overlay-soft" />

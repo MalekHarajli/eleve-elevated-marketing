@@ -34,12 +34,12 @@ const Services = () => {
   return (
     <main>
         <Helmet>
-          <title>Services — SMMA, Facebook & Instagram Ads | Elevé</title>
+          <title>Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing</title>
           <meta name="description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
 
           {/* Open Graph */}
-          <meta property="og:title" content="Services — SMMA, Facebook & Instagram Ads | Elevé" />
+          <meta property="og:title" content="Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing" />
           <meta property="og:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
@@ -47,7 +47,7 @@ const Services = () => {
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Services — SMMA, Facebook & Instagram Ads | Elevé" />
+          <meta name="twitter:title" content="Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing" />
           <meta name="twitter:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
 

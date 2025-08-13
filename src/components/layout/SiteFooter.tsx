@@ -8,8 +8,8 @@ const SiteFooter = () => {
       <div className="container mx-auto py-10 grid gap-8 md:grid-cols-3">
         <div>
           <h3 className="text-lg font-semibold flex items-center gap-2">
-            <img src="/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png" alt="Elevé Marketing logo" className="h-6 w-6 object-contain" />
-            Elevé Marketing
+            <img src="/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png" alt="AutoAdvance Marketing logo" className="h-6 w-6 object-contain" />
+            AutoAdvance Marketing
           </h3>
           <p className="text-muted-foreground mt-2">
             Helping Detroit businesses rise above the noise with data-driven Meta Ads and engaging social content.
@@ -33,7 +33,7 @@ const SiteFooter = () => {
       </div>
       <div className="border-t">
         <div className="container mx-auto py-6 text-sm text-muted-foreground flex items-center justify-between">
-          <span>© {year} Elevé Marketing. All rights reserved.</span>
+          <span>© {year} AutoAdvance Marketing. All rights reserved.</span>
           <span>Designed for performance and growth.</span>
         </div>
       </div>
