@@ -8,7 +8,7 @@ const SiteFooter = () => {
       <div className="container mx-auto py-10 grid gap-8 md:grid-cols-3">
         <div>
           <h3 className="text-lg font-semibold flex items-center gap-2">
-            <img src="/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png" alt="AutoAdvance Marketing logo" className="h-6 w-6 object-contain" />
+            <img src="/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png" alt="AutoAdvance Marketing logo" className="h-6 w-6 object-contain" />
             AutoAdvance Marketing
           </h3>
           <p className="text-muted-foreground mt-2">

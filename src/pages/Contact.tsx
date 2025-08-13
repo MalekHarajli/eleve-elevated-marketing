@@ -32,13 +32,13 @@ const Contact = () => {
           <meta property="og:description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/contact'} />
-          <meta property="og:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
+          <meta property="og:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Contact AutoAdvance Marketing — SMMA & Ads Manager" />
           <meta name="twitter:description" content="Talk to our team about Facebook and Instagram ads. Serving Detroit and clients nationwide." />
-          <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png` : 'https://eleve-marketing.example.com/logo.png'} />
+          <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
 
           {/* Structured Data */}
           <script type="application/ld+json">{JSON.stringify({

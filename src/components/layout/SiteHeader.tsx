@@ -6,7 +6,7 @@ const SiteHeader = () => {
     <header className="border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <nav className="container mx-auto flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2" aria-label="AutoAdvance Marketing Home">
-          <img src="/lovable-uploads/350fe1e0-3c18-4a82-a450-310da93a1d13.png" alt="AutoAdvance Marketing logo" className="h-8 w-8 object-contain" />
+          <img src="/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png" alt="AutoAdvance Marketing logo" className="h-8 w-8 object-contain" />
           <span className="text-xl font-semibold tracking-tight">AutoAdvance Marketing</span>
         </Link>
         <div className="hidden md:flex items-center gap-6">
