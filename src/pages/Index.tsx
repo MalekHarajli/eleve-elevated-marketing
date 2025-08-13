@@ -77,19 +77,19 @@ const Index = () => {
       <section className="container mx-auto py-16">
         <div className="grid md:grid-cols-3 gap-8">
           <article className="border rounded-lg p-6 hover-scale bg-card">
-            <BarChart3 className="text-primary mb-3" />
-            <h3 className="text-xl font-semibold mb-2">Expert Facebook Ads Manager</h3>
-            <p className="text-muted-foreground">Professional Facebook ads manager services with advanced Meta advertising strategies. Specialized Instagram marketing and social media ads optimization.</p>
+            <BarChart3 className="text-brand-gold mb-3" />
+            <h3 className="text-xl font-semibold mb-2">Targeted Ad Campaign Management</h3>
+            <p className="text-muted-foreground">Expert management of Facebook, Instagram, and Google Ads. We create precision-targeted campaigns, optimize weekly for maximum ROI, and reach ready-to-buy customers with compelling ad creative.</p>
           </article>
           <article className="border rounded-lg p-6 hover-scale bg-card">
-            <Users className="text-primary mb-3" />
-            <h3 className="text-xl font-semibold mb-2">Full-Service SMMA Solutions</h3>
-            <p className="text-muted-foreground">Complete social media marketing agency services including content creation, community management, and strategic SMMA growth systems.</p>
+            <Users className="text-brand-gold mb-3" />
+            <h3 className="text-xl font-semibold mb-2">Social Media Management & Growth</h3>
+            <p className="text-muted-foreground">Consistent, branded content to grow your audience and build trust. Includes 3 high-quality posts per week, engagement strategies, and seasonal campaigns to keep your brand top-of-mind.</p>
           </article>
           <article className="border rounded-lg p-6 hover-scale bg-card">
-            <Cog className="text-primary mb-3" />
-            <h3 className="text-xl font-semibold mb-2">Marketing Agency Near Me</h3>
-            <p className="text-muted-foreground">Your local digital marketing agency partner providing end-to-end marketing solutions, from strategy to execution and reporting.</p>
+            <Cog className="text-brand-gold mb-3" />
+            <h3 className="text-xl font-semibold mb-2">Website Creation & Maintenance (Add-On)</h3>
+            <p className="text-muted-foreground">Custom, SEO-friendly websites designed to convert visitors into customers. Includes responsive design, ongoing maintenance, and updates to keep your online presence fresh.</p>
           </article>
         </div>
       </section>
