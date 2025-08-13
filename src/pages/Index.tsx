@@ -56,9 +56,9 @@ const Index = () => {
         <div className="absolute inset-0">
           <div className="container mx-auto h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <h1 className="text-5xl md:text-6xl font-semibold mb-4">High-Performance Ad Campaigns & Social Media Growth</h1>
+              <h1 className="text-5xl md:text-6xl font-semibold mb-4">High-ROI Ads & Social Media That Drive Real Growth</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                We help local businesses dominate their market with precision-targeted Facebook, Instagram, and Google Ads — backed by consistent, branded social media content and high-converting websites. Your social media marketing agency for Facebook ads manager, Instagram marketing, Google ads management, and full-funnel digital marketing services.
+                Facebook, Instagram, and Google Ads with proven results.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Button asChild className="btn-glow">
