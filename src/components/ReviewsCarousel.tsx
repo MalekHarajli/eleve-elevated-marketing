@@ -39,20 +39,33 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => (
 
 const ReviewsCarousel: React.FC = () => {
   const [api, setApi] = React.useState<CarouselApi | null>(null);
+  const [groupSize, setGroupSize] = React.useState(1);
+
+  React.useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    const update = () => setGroupSize(mq.matches ? 3 : 1);
+    update();
+    if (mq.addEventListener) mq.addEventListener('change', update);
+    else mq.addListener(update);
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener('change', update);
+      else mq.removeListener(update);
+    };
+  }, []);
 
   const handleNextGroup = React.useCallback(() => {
     if (!api) return;
     const current = api.selectedScrollSnap();
     const snaps = api.scrollSnapList();
-    api.scrollTo((current + 3) % snaps.length);
-  }, [api]);
+    api.scrollTo((current + groupSize) % snaps.length);
+  }, [api, groupSize]);
 
   const handlePrevGroup = React.useCallback(() => {
     if (!api) return;
     const current = api.selectedScrollSnap();
     const snaps = api.scrollSnapList();
-    api.scrollTo((current - 3 + snaps.length) % snaps.length);
-  }, [api]);
+    api.scrollTo((current - groupSize + snaps.length) % snaps.length);
+  }, [api, groupSize]);
 
   return (
     <div>
