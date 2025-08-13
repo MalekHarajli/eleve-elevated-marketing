@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+
 import { Instagram } from "lucide-react";
 
 const SiteHeader = () => {
@@ -27,9 +27,6 @@ const SiteHeader = () => {
             <Instagram />
             <span className="sr-only">Instagram</span>
           </a>
-          <Button asChild className="btn-glow">
-            <Link to="/contact">Book Your Free Consultation</Link>
-          </Button>
         </div>
       </nav>
     </header>
