@@ -62,7 +62,7 @@ const Contact = () => {
 
       <section className="container mx-auto px-4 py-16">
         <header className="max-w-2xl mb-8">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-3">Contact Our SMMA Agency</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-3">Contact Our Specialists</h1>
           <p className="text-lg text-muted-foreground">Get expert Facebook ads manager services and social media marketing agency solutions. Free consultation with a top-rated marketing agency near me.</p>
         </header>
 
