@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				heading: ['Eurostile Extended', 'Eurostile', 'Arial Black', 'Arial', 'sans-serif'],
+				heading: ['Microgramma', 'Microgramma D Med Ext', 'Eurostile', 'Arial Black', 'Impact', 'sans-serif'],
 				body: ['Lato', 'ui-sans-serif', 'system-ui', 'sans-serif']
 			},
 			colors: {
