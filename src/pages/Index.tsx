@@ -130,7 +130,7 @@ const Index = () => {
             <article className="flex-1 border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
-                <div>- 3 branded posts/week</div>
+                <div>- 3 posts per week</div>
                 <div>- Grow awareness</div>
                 <div>- Increase engagement</div>
                 <div>- Build trust</div>
@@ -177,7 +177,7 @@ const Index = () => {
             <article className="border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
-                <div>- 3 branded posts/week</div>
+                <div>- 3 posts per week</div>
                 <div>- Grow awareness</div>
                 <div>- Increase engagement</div>
                 <div>- Build trust</div>
