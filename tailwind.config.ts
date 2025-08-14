@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				heading: ['Qwitcher Grypen', 'cursive'],
+				heading: ['Eurostile Extended', 'Eurostile', 'Arial Black', 'Arial', 'sans-serif'],
 				body: ['Lato', 'ui-sans-serif', 'system-ui', 'sans-serif']
 			},
 			colors: {
