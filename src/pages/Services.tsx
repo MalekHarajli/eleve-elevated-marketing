@@ -99,7 +99,7 @@ const Services = () => {
             title="Website Creation & Maintenance (Add-On)"
             points={[
               "1-page and multi-page website builds",
-              "Responsive design and SEO-friendly setup",
+              "Responsive design",
               "Ongoing updates and maintenance",
               "Available as an add-on service for marketing clients",
             ]}
@@ -112,7 +112,7 @@ const Services = () => {
               "3-5 page professional website with advanced features",
               "Custom design with conversion optimization",
               "Priority maintenance & weekly updates",
-              "Advanced SEO setup with analytics integration",
+              "Advanced SEO setup",
               "24/7 technical support and performance monitoring",
             ]}
             ctaLabel="Upgrade to Premium"
