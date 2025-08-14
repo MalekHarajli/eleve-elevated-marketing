@@ -14,7 +14,7 @@ const SiteHeader = () => {
             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
           </span>
         </Link>
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4 -ml-8">
           <NavLink to="/" className={({ isActive }) => `story-link ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Home</NavLink>
           <NavLink to="/services" className={({ isActive }) => `story-link ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Services</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `story-link ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Contact</NavLink>
