@@ -115,7 +115,7 @@ const Index = () => {
 
             {/* Targeted Ads */}
             <article className="flex-1 border rounded-lg p-6 bg-card">
-              <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads</div>
+              <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads<br />&nbsp;</div>
               <div className="text-muted-foreground">
                 <div>- Facebook Ads</div>
                 <div>- Instagram Ads</div>
@@ -163,7 +163,7 @@ const Index = () => {
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card">
-              <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads</div>
+              <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads<br />&nbsp;</div>
               <div className="text-muted-foreground">
                 <div>- Facebook Ads</div>
                 <div>- Instagram Ads</div>
