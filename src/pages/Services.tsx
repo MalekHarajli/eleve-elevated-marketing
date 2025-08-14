@@ -107,7 +107,7 @@ const Services = () => {
           />
           <ServiceCard
             Icon={BarChart3}
-            title="Premium Website Package"
+            title="Premium Website Package (Add-On)"
             points={[
               "3-5 page professional website with advanced features",
               "Custom design with conversion optimization",
