@@ -182,3 +182,4 @@ All colors MUST be HSL.
   .animate-glow-pulse {
     animation: glowPulse 2s ease-in-out infinite;
   }
+}
