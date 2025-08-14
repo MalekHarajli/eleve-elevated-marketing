@@ -83,7 +83,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Initialize Resend
     const resend = new Resend(resendApiKey);
 
-    // Send email
+    // Send notification email to AutoAdvance
     const emailSubject = `New Consultation — ${name}${body.businessName ? ` (${body.businessName})` : ''}`;
     const emailBody = `Name: ${name}
 Business: ${body.businessName || 'Not provided'}
@@ -96,9 +96,9 @@ ${message}
 Page URL: ${body.pageUrl}
 Submitted At: ${body.timestamp}`;
 
-    console.log("Sending email with subject:", emailSubject);
+    console.log("Sending notification email with subject:", emailSubject);
 
-    const emailResponse = await resend.emails.send({
+    const notificationResponse = await resend.emails.send({
       from: "AutoAdvance <onboarding@resend.dev>",
       to: ["autoadvancem@gmail.com"],
       replyTo: email,
@@ -106,7 +106,39 @@ Submitted At: ${body.timestamp}`;
       text: emailBody,
     });
 
-    console.log("Email sent successfully:", emailResponse);
+    console.log("Notification email sent successfully:", notificationResponse);
+
+    // Send thank you email to client
+    const thankYouSubject = "Thank you for your consultation request!";
+    const thankYouBody = `Hi ${name},
+
+Thank you for reaching out to AutoAdvance Marketing! 
+
+We've received your consultation request and are excited to learn more about ${body.businessName || 'your business'}.
+
+Our team will review your information and get back to you soon with next steps. We typically respond within 24 hours during business days.
+
+In the meantime, feel free to check out our services at our website or follow us on social media for marketing tips and industry insights.
+
+We look forward to helping you grow your business!
+
+Best regards,
+The AutoAdvance Marketing Team
+
+---
+This email was sent in response to your consultation request submitted on ${new Date(body.timestamp).toLocaleDateString()}.
+If you have any questions, you can reply to this email or call us at +1(313)-970-5903.`;
+
+    console.log("Sending thank you email to:", email);
+
+    const thankYouResponse = await resend.emails.send({
+      from: "AutoAdvance <onboarding@resend.dev>",
+      to: [email],
+      subject: thankYouSubject,
+      text: thankYouBody,
+    });
+
+    console.log("Thank you email sent successfully:", thankYouResponse);
 
     // Store in database (optional - don't fail if this fails)
     try {
@@ -133,7 +165,7 @@ Submitted At: ${body.timestamp}`;
       console.error("Database operation failed (continuing anyway):", dbError);
     }
 
-    return new Response(JSON.stringify({ success: true, emailId: emailResponse.data?.id }), {
+    return new Response(JSON.stringify({ success: true, notificationEmailId: notificationResponse.data?.id, thankYouEmailId: thankYouResponse.data?.id }), {
       status: 200,
       headers: { "Content-Type": "application/json", ...corsHeaders },
     });
