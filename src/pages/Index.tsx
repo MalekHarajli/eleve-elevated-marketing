@@ -105,11 +105,11 @@ const Index = () => {
             <article className="flex-1 border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
               <div className="text-muted-foreground">
-                <div>~ Goals</div>
-                <div>~ Target audience</div>
-                <div>~ Competitor analysis</div>
-                <div>~ Custom marketing plan</div>
-                <div>~ Tracking setup</div>
+                <div>- Goals</div>
+                <div>- Target audience</div>
+                <div>- Competitor analysis</div>
+                <div>- Custom marketing plan</div>
+                <div>- Tracking setup</div>
               </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
@@ -118,9 +118,9 @@ const Index = () => {
             <article className="flex-1 border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads</div>
               <div className="text-muted-foreground">
-                <div>~ Facebook Ads</div>
-                <div>~ Instagram Ads</div>
-                <div>~ Google Ads</div>
+                <div>- Facebook Ads</div>
+                <div>- Instagram Ads</div>
+                <div>- Google Ads</div>
               </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
@@ -129,10 +129,10 @@ const Index = () => {
             <article className="flex-1 border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
-                <div>~ 3 branded posts per week</div>
-                <div>~ Grow awareness</div>
-                <div>~ Increase engagement</div>
-                <div>~ Build trust</div>
+                <div>- 3 branded posts per week</div>
+                <div>- Grow awareness</div>
+                <div>- Increase engagement</div>
+                <div>- Build trust</div>
               </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
@@ -141,9 +141,9 @@ const Index = () => {
             <article className="flex-1 border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
-                <div>~ Ongoing tracking</div>
-                <div>~ Refinements & improvements</div>
-                <div>~ Monthly ROI reports</div>
+                <div>- Ongoing tracking</div>
+                <div>- Refinements & improvements</div>
+                <div>- Monthly ROI reports</div>
               </div>
             </article>
           </div>
@@ -153,11 +153,11 @@ const Index = () => {
             <article className="border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
               <div className="text-muted-foreground">
-                <div>~ Goals</div>
-                <div>~ Target audience</div>
-                <div>~ Competitor analysis</div>
-                <div>~ Custom marketing plan</div>
-                <div>~ Tracking setup</div>
+                <div>- Goals</div>
+                <div>- Target audience</div>
+                <div>- Competitor analysis</div>
+                <div>- Custom marketing plan</div>
+                <div>- Tracking setup</div>
               </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
@@ -165,9 +165,9 @@ const Index = () => {
             <article className="border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads</div>
               <div className="text-muted-foreground">
-                <div>~ Facebook Ads</div>
-                <div>~ Instagram Ads</div>
-                <div>~ Google Ads</div>
+                <div>- Facebook Ads</div>
+                <div>- Instagram Ads</div>
+                <div>- Google Ads</div>
               </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
@@ -175,10 +175,10 @@ const Index = () => {
             <article className="border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
-                <div>~ 3 branded posts per week</div>
-                <div>~ Grow awareness</div>
-                <div>~ Increase engagement</div>
-                <div>~ Build trust</div>
+                <div>- 3 branded posts per week</div>
+                <div>- Grow awareness</div>
+                <div>- Increase engagement</div>
+                <div>- Build trust</div>
               </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
@@ -186,9 +186,9 @@ const Index = () => {
             <article className="border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
-                <div>~ Ongoing tracking</div>
-                <div>~ Refinements & improvements</div>
-                <div>~ Monthly ROI reports</div>
+                <div>- Ongoing tracking</div>
+                <div>- Refinements & improvements</div>
+                <div>- Monthly ROI reports</div>
               </div>
             </article>
           </div>
