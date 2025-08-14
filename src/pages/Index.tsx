@@ -102,7 +102,7 @@ const Index = () => {
           {/* Desktop: horizontal steps with gold connectors */}
           <div className="hidden md:flex items-stretch">
             {/* Strategy & Onboarding */}
-            <article className="flex-1 border rounded-lg p-6 bg-card">
+            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
               <div className="text-muted-foreground">
                 <div>- Goals</div>
@@ -114,7 +114,7 @@ const Index = () => {
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
             {/* Targeted Ads */}
-            <article className="flex-1 border rounded-lg p-6 bg-card">
+            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads<br />&nbsp;</div>
               <div className="text-muted-foreground">
                 <div>- Facebook Ads</div>
@@ -126,7 +126,7 @@ const Index = () => {
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
             {/* Consistent Content */}
-            <article className="flex-1 border rounded-lg p-6 bg-card">
+            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
@@ -138,7 +138,7 @@ const Index = () => {
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
             {/* Optimization & Reporting */}
-            <article className="flex-1 border rounded-lg p-6 bg-card">
+            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
@@ -151,7 +151,7 @@ const Index = () => {
 
           {/* Mobile: stacked steps with vertical connectors */}
           <div className="md:hidden flex flex-col">
-            <article className="border rounded-lg p-6 bg-card">
+            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
               <div className="text-muted-foreground">
                 <div>- Goals</div>
@@ -162,7 +162,7 @@ const Index = () => {
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
-            <article className="border rounded-lg p-6 bg-card">
+            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads<br />&nbsp;</div>
               <div className="text-muted-foreground">
                 <div>- Facebook Ads</div>
@@ -173,7 +173,7 @@ const Index = () => {
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
-            <article className="border rounded-lg p-6 bg-card">
+            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
@@ -184,7 +184,7 @@ const Index = () => {
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
-            <article className="border rounded-lg p-6 bg-card">
+            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
               <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
