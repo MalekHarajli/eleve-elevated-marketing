@@ -101,65 +101,95 @@ const Index = () => {
 
           {/* Desktop: horizontal steps with gold connectors */}
           <div className="hidden md:flex items-stretch">
-            {/* Step 1 */}
+            {/* Strategy & Onboarding */}
             <article className="flex-1 border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Strategy & Onboarding</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 1 — Strategy & Onboarding</div>
-              <p className="text-muted-foreground">We learn your goals, target audience, and competitors, then build a custom marketing plan and tracking setup.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
+              <div className="text-muted-foreground">
+                <div>~ Goals</div>
+                <div>~ Target audience</div>
+                <div>~ Competitor analysis</div>
+                <div>~ Custom marketing plan</div>
+                <div>~ Tracking setup</div>
+              </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
-            {/* Step 2 */}
+            {/* Targeted Ads */}
             <article className="flex-1 border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Targeted Ads</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 2 — Targeted Ads</div>
-              <p className="text-muted-foreground">We run Facebook, Instagram, and Google Ads designed to reach ready-to-buy customers with precision targeting.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads</div>
+              <div className="text-muted-foreground">
+                <div>~ Facebook Ads</div>
+                <div>~ Instagram Ads</div>
+                <div>~ Google Ads</div>
+              </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
-            {/* Step 3 */}
+            {/* Consistent Content */}
             <article className="flex-1 border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Consistent Content</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 3 — Consistent Content</div>
-              <p className="text-muted-foreground">We post 3 branded, high-quality pieces each week to grow awareness, engagement, and trust.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
+              <div className="text-muted-foreground">
+                <div>~ 3 branded posts per week</div>
+                <div>~ Grow awareness</div>
+                <div>~ Increase engagement</div>
+                <div>~ Build trust</div>
+              </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
-            {/* Step 4 */}
+            {/* Optimization & Reporting */}
             <article className="flex-1 border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Optimization & Reporting</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 4 — Optimization & Reporting</div>
-              <p className="text-muted-foreground">We track, refine, and improve campaigns — with monthly reports showing clear ROI.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
+              <div className="text-muted-foreground">
+                <div>~ Ongoing tracking</div>
+                <div>~ Refinements & improvements</div>
+                <div>~ Monthly ROI reports</div>
+              </div>
             </article>
           </div>
 
           {/* Mobile: stacked steps with vertical connectors */}
           <div className="md:hidden flex flex-col">
             <article className="border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Strategy & Onboarding</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 1 — Strategy & Onboarding</div>
-              <p className="text-muted-foreground">We learn your goals, target audience, and competitors, then build a custom marketing plan and tracking setup.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
+              <div className="text-muted-foreground">
+                <div>~ Goals</div>
+                <div>~ Target audience</div>
+                <div>~ Competitor analysis</div>
+                <div>~ Custom marketing plan</div>
+                <div>~ Tracking setup</div>
+              </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Targeted Ads</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 2 — Targeted Ads</div>
-              <p className="text-muted-foreground">We run Facebook, Instagram, and Google Ads designed to reach ready-to-buy customers with precision targeting.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Targeted Ads</div>
+              <div className="text-muted-foreground">
+                <div>~ Facebook Ads</div>
+                <div>~ Instagram Ads</div>
+                <div>~ Google Ads</div>
+              </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Consistent Content</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 3 — Consistent Content</div>
-              <p className="text-muted-foreground">We post 3 branded, high-quality pieces each week to grow awareness, engagement, and trust.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
+              <div className="text-muted-foreground">
+                <div>~ 3 branded posts per week</div>
+                <div>~ Grow awareness</div>
+                <div>~ Increase engagement</div>
+                <div>~ Build trust</div>
+              </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card">
-              <div className="text-sm uppercase tracking-wide text-muted-foreground mb-1">Optimization & Reporting</div>
-              <div className="text-foreground font-semibold text-lg mb-2">Step 4 — Optimization & Reporting</div>
-              <p className="text-muted-foreground">We track, refine, and improve campaigns — with monthly reports showing clear ROI.</p>
+              <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
+              <div className="text-muted-foreground">
+                <div>~ Ongoing tracking</div>
+                <div>~ Refinements & improvements</div>
+                <div>~ Monthly ROI reports</div>
+              </div>
             </article>
           </div>
         </div>
