@@ -144,7 +144,7 @@ const Index = () => {
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
                 <div>- Refinements & improvements</div>
-                <div>- Monthly ROI reports</div>
+                <div>- Monthly ROI</div>
               </div>
             </article>
           </div>
@@ -190,7 +190,7 @@ const Index = () => {
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
                 <div>- Refinements & improvements</div>
-                <div>- Monthly ROI reports</div>
+                <div>- Monthly ROI</div>
               </div>
             </article>
           </div>
