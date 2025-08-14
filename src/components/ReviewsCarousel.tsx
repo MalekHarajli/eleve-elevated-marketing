@@ -10,18 +10,10 @@ import {
 } from "@/components/ui/carousel";
 
 const reviews: { name: string; quote: string; rating: number }[] = [
-  { name: "Alex P.", quote: "AutoAdvance took our local ads from break-even to profitable in 60 days.", rating: 5 },
-  { name: "Riley C.", quote: "Our socials finally reflect our brand — engagement is way up.", rating: 5 },
-  { name: "Morgan D.", quote: "Clear strategy, seamless execution, and results we can measure.", rating: 5 },
-  { name: "Jordan S.", quote: "Professional team. They know Meta Ads inside out.", rating: 5 },
-  { name: "Taylor H.", quote: "Weekly optimizations actually moved the needle for us.", rating: 5 },
-  { name: "Casey L.", quote: "The onboarding was smooth and goals were crystal clear.", rating: 5 },
-  { name: "Priya M.", quote: "Creative and data-driven — best combo we’ve seen.", rating: 5 },
-  { name: "Diego R.", quote: "Great communication and even better results.", rating: 5 },
-  { name: "Ava K.", quote: "They treat our budget like their own. Impressive ROAS.", rating: 5 },
-  { name: "Samir N.", quote: "Content output is consistent and on-brand every week.", rating: 5 },
-  { name: "Nina V.", quote: "Reporting is transparent — we know exactly what’s working.", rating: 5 },
-  { name: "Chris J.", quote: "Our lead quality improved within the first month.", rating: 5 },
+  { name: "Mustapha H.", quote: "AutoAdvance took our local ads from break-even to profitable in 60 days.", rating: 5 },
+  { name: "Ahmad C.", quote: "Our socials finally reflect our brand — engagement is way up.", rating: 5 },
+  { name: "Moe H.", quote: "Clear strategy, seamless execution, and results we can measure.", rating: 5 },
+  { name: "Hassan H.", quote: "Professional team. They know Meta Ads inside out.", rating: 5 },
 ];
 
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => (
@@ -77,7 +69,7 @@ const ReviewsCarousel: React.FC = () => {
                 <div className="mb-3" aria-label={`${r.rating} out of 5 stars`}>
                   <StarRating rating={r.rating} />
                 </div>
-                <p className="mb-3">“{r.quote}”</p>
+                <p className="mb-3">"{r.quote}"</p>
                 <cite className="text-muted-foreground not-italic mt-auto">— {r.name}</cite>
               </article>
             </CarouselItem>
