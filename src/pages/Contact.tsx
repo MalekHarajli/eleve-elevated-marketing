@@ -4,20 +4,83 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Loader2 } from "lucide-react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get('name');
-    toast({
-      title: "Consultation booked!",
-      description: `Thanks${name ? `, ${name}` : ''}! We'll reach out shortly to schedule your session.`,
-    });
-    e.currentTarget.reset();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      
+      // Check honeypot field
+      const companyWebsite = formData.get('companyWebsite') as string;
+      if (companyWebsite && companyWebsite.trim() !== '') {
+        // Silently ignore spam submission
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Extract form data
+      const data = {
+        name: formData.get('name') as string,
+        businessName: formData.get('businessName') as string,
+        email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
+        message: formData.get('message') as string,
+        pageUrl: window.location.href,
+        timestamp: new Date().toISOString(),
+      };
+
+      // Validate required fields
+      if (!data.name || !data.email || !data.phone || !data.message) {
+        throw new Error('Please fill in all required fields');
+      }
+
+      // Validate message length
+      if (data.message.length > 1000) {
+        throw new Error('Message must be 1000 characters or less');
+      }
+
+      // Call the edge function
+      const { error } = await supabase.functions.invoke('send-consultation', {
+        body: data,
+      });
+
+      if (error) {
+        throw new Error(error.message || 'Failed to send consultation request');
+      }
+
+      // Success
+      toast({
+        title: "Thanks! We'll reach out within 24 hours.",
+        description: `Your consultation request has been sent successfully.`,
+      });
+
+      // Reset form and redirect
+      e.currentTarget.reset();
+      setTimeout(() => {
+        navigate('/thank-you');
+      }, 1500);
+
+    } catch (error: any) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Error",
+        description: error.message || 'Failed to send your request. Please try again.',
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -68,31 +131,55 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 md:gap-10">
           <form onSubmit={onSubmit} className="space-y-5 border rounded-lg p-5 sm:p-6 bg-card">
+            {/* Honeypot field - hidden from users */}
+            <Input 
+              name="companyWebsite" 
+              autoComplete="off"
+              tabIndex={-1}
+              style={{ 
+                position: 'absolute', 
+                left: '-9999px', 
+                width: '1px', 
+                height: '1px', 
+                opacity: 0 
+              }}
+              aria-hidden="true"
+            />
+            
             <div className="grid md:grid-cols-2 gap-5">
               <div>
-                <Label htmlFor="name">Name</Label>
+                <Label htmlFor="name">Name *</Label>
                 <Input id="name" name="name" required autoComplete="name" className="h-11" />
               </div>
               <div>
-                <Label htmlFor="business">Business Name</Label>
-                <Input id="business" name="business" required autoComplete="organization" className="h-11" />
+                <Label htmlFor="businessName">Business Name</Label>
+                <Input id="businessName" name="businessName" autoComplete="organization" className="h-11" />
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-5">
               <div>
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">Email *</Label>
                 <Input id="email" name="email" type="email" required autoComplete="email" className="h-11" />
               </div>
               <div>
-                <Label htmlFor="phone">Phone</Label>
-                <Input id="phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" className="h-11" />
+                <Label htmlFor="phone">Phone *</Label>
+                <Input id="phone" name="phone" type="tel" required autoComplete="tel" inputMode="tel" className="h-11" />
               </div>
             </div>
             <div>
-              <Label htmlFor="message">Message</Label>
-              <Textarea id="message" name="message" required className="min-h-[140px] p-3" />
+              <Label htmlFor="message">Message * <span className="text-sm text-muted-foreground">(max 1000 characters)</span></Label>
+              <Textarea id="message" name="message" required maxLength={1000} className="min-h-[140px] p-3" />
             </div>
-            <Button type="submit" className="btn-glow w-full md:w-auto">Book My Free Consultation</Button>
+            <Button type="submit" disabled={isSubmitting} className="btn-glow w-full md:w-auto">
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Sending...
+                </>
+              ) : (
+                'Book My Free Consultation'
+              )}
+            </Button>
           </form>
 
           <aside className="space-y-6">
