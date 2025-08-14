@@ -17,7 +17,7 @@ const ServiceCard = ({
   <article className="border rounded-lg p-6 hover-scale bg-card">
     <div className="flex items-center gap-3 mb-4">
       <Icon className="text-primary" />
-      <h3 className="text-xl font-semibold" dangerouslySetInnerHTML={{ __html: title }}></h3>
+      <h3 className="text-xl font-semibold">{title}</h3>
     </div>
     <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
       {points.map((p) => (
@@ -107,7 +107,7 @@ const Services = () => {
           />
           <ServiceCard
             Icon={BarChart3}
-            title="Premium Website Package<br/><span class='text-sm text-muted-foreground'>(Add-On)</span>"
+            title="Premium Website Package (Add-On)"
             points={[
               "3-5 page professional website with advanced features",
               "Custom design with conversion optimization",
