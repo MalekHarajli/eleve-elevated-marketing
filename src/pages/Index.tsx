@@ -121,6 +121,7 @@ const Index = () => {
                 <div>- Facebook Ads</div>
                 <div>- Instagram Ads</div>
                 <div>- Google Ads</div>
+                <div>- Precision targeting</div>
               </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
@@ -129,7 +130,7 @@ const Index = () => {
             <article className="flex-1 border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
-                <div>- 3 branded posts per week</div>
+                <div>- 3 branded posts/week</div>
                 <div>- Grow awareness</div>
                 <div>- Increase engagement</div>
                 <div>- Build trust</div>
@@ -168,6 +169,7 @@ const Index = () => {
                 <div>- Facebook Ads</div>
                 <div>- Instagram Ads</div>
                 <div>- Google Ads</div>
+                <div>- Precision targeting</div>
               </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
@@ -175,7 +177,7 @@ const Index = () => {
             <article className="border rounded-lg p-6 bg-card">
               <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
-                <div>- 3 branded posts per week</div>
+                <div>- 3 branded posts/week</div>
                 <div>- Grow awareness</div>
                 <div>- Increase engagement</div>
                 <div>- Build trust</div>
