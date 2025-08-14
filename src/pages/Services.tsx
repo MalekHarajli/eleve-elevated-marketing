@@ -19,8 +19,8 @@ const ServiceCard = ({
       <Icon className="text-primary" />
       <div>
         <h3 className="text-xl font-semibold">{title}</h3>
-        {title === "Premium Website Package" && (
-          <p className="text-sm text-muted-foreground">(Add-On)</p>
+        {(title === "Premium Website Package" || title === "Basic Website Package") && (
+          <p className="text-sm text-white">(Add-On)</p>
         )}
       </div>
     </div>
@@ -101,7 +101,7 @@ const Services = () => {
           />
           <ServiceCard
             Icon={Layout}
-            title="Basic Website Package (Add-On)"
+            title="Basic Website Package"
             points={[
               "1-page and multi-page website builds",
               "Responsive design",
