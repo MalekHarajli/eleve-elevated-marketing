@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone } from "lucide-react";
+import Map from "@/components/Map";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -96,23 +97,17 @@ const Contact = () => {
           </form>
 
           <aside className="space-y-6">
-            <div className="border rounded-lg p-5 sm:p-6 bg-card">
-              <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>
-                <li className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</li>
-              </ul>
-            </div>
-            <div className="border rounded-lg overflow-hidden">
-              <iframe
-                title="AutoAdvance Marketing — Detroit, MI"
-                src="https://maps.google.com/maps?q=Detroit%2C%20MI&t=&z=12&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="300"
-                loading="lazy"
-                style={{ border: 0 }}
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+            <div className="grid grid-cols-2 gap-6 h-full">
+              <div className="border rounded-lg p-5 sm:p-6 bg-card">
+                <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>
+                  <li className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</li>
+                </ul>
+              </div>
+              <div className="border rounded-lg overflow-hidden h-[300px]">
+                <Map />
+              </div>
             </div>
           </aside>
         </div>
