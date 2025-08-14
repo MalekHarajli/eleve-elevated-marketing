@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				heading: ['Microgramma', 'Microgramma D Med Ext', 'Eurostile', 'Arial Black', 'Impact', 'sans-serif'],
+				heading: ['Orbitron', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 				body: ['Lato', 'ui-sans-serif', 'system-ui', 'sans-serif']
 			},
 			colors: {
