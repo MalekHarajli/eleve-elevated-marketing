@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import heroImage from "@/assets/hero-modern-luxury.jpg";
+import heroImage from "@/assets/hero-bmw-bright.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BarChart3, Users, Cog, ArrowRight } from "lucide-react";
