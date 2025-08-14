@@ -105,6 +105,18 @@ const Services = () => {
             ]}
             ctaLabel="Get Your Custom Growth Plan"
           />
+          <ServiceCard
+            Icon={BarChart3}
+            title="Premium Website Development"
+            points={[
+              "3-5 page professional website with advanced features",
+              "Custom design with conversion optimization",
+              "Priority maintenance & weekly updates",
+              "Advanced SEO setup with analytics integration",
+              "24/7 technical support and performance monitoring",
+            ]}
+            ctaLabel="Upgrade to Premium"
+          />
         </div>
 
         <div className="mt-14 border rounded-lg p-8 bg-card">
