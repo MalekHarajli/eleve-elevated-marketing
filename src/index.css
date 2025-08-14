@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 12%;
     --popover-foreground: 0 0% 98%;
 
-    /* Brand: Neon Blue for CTAs and highlights */
-    --primary: 200 100% 65%; /* Neon Blue */
-    --primary-foreground: 0 0% 8%; /* Dark text on neon blue */
+    /* Brand: Updated Blue for CTAs and highlights */
+    --primary: 195 100% 50%; /* Updated Blue */
+    --primary-foreground: 0 0% 98%; /* Light text on blue */
 
     --secondary: 0 0% 16%;
     --secondary-foreground: 0 0% 98%;
@@ -27,36 +27,36 @@ All colors MUST be HSL.
     --muted: 0 0% 16%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 200 100% 65%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 195 100% 50%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 200 100% 65%;
+    --ring: 195 100% 50%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 10%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 200 100% 65%;
-    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 0 0% 16%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 200 100% 65%;
+    --sidebar-ring: 195 100% 50%;
 
     /* Brand tokens */
-    --brand-neon: 200 100% 65%;
+    --brand-neon: 195 100% 50%;
 
     /* Premium finishes */
-    --primary-glow: 200 100% 75%;
-    --gradient-primary: linear-gradient(135deg, hsl(200 100% 65%), hsl(200 100% 72%));
+    --primary-glow: 195 100% 60%;
+    --gradient-primary: linear-gradient(135deg, hsl(195 100% 50%), hsl(195 100% 60%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 12%));
-    --shadow-elegant: 0 10px 30px -10px hsl(200 100% 65% / 0.3);
-    --shadow-glow: 0 0 40px hsl(200 100% 65% / 0.4);
+    --shadow-elegant: 0 10px 30px -10px hsl(195 100% 50% / 0.3);
+    --shadow-glow: 0 0 40px hsl(195 100% 50% / 0.4);
   }
 
   .dark {
