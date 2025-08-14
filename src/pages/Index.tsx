@@ -107,8 +107,8 @@ const Index = () => {
               <div className="text-muted-foreground">
                 <div>- Goals</div>
                 <div>- Target audience</div>
-                <div>- Competitor analysis</div>
-                <div>- Custom marketing plan</div>
+                <div>- Competitor</div>
+                <div>- Custom marketing</div>
                 <div>- Tracking setup</div>
               </div>
             </article>
@@ -157,8 +157,8 @@ const Index = () => {
               <div className="text-muted-foreground">
                 <div>- Goals</div>
                 <div>- Target audience</div>
-                <div>- Competitor analysis</div>
-                <div>- Custom marketing plan</div>
+                <div>- Competitor</div>
+                <div>- Custom marketing</div>
                 <div>- Tracking setup</div>
               </div>
             </article>
