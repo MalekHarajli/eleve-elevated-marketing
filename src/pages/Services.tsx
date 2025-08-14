@@ -96,7 +96,7 @@ const Services = () => {
           />
           <ServiceCard
             Icon={Layout}
-            title="Website Creation & Maintenance (Add-On)"
+            title="Basic Website Package (Add-On)"
             points={[
               "1-page and multi-page website builds",
               "Responsive design",
@@ -107,7 +107,7 @@ const Services = () => {
           />
           <ServiceCard
             Icon={BarChart3}
-            title="Premium Website Development"
+            title="Premium Website Package"
             points={[
               "3-5 page professional website with advanced features",
               "Custom design with conversion optimization",
