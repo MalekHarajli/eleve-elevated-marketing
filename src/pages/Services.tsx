@@ -67,7 +67,7 @@ const Services = () => {
 
       <section className="container mx-auto py-16">
         <header className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-heading font-semibold mb-4 text-center">Services We Offer</h1>
+          <h1 className="text-4xl md:text-5xl font-heading font-semibold mb-4 text-center">SERVICES WE OFFER</h1>
           <p className="text-lg text-muted-foreground">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
         </header>
 
