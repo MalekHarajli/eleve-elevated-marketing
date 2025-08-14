@@ -8,7 +8,11 @@ const SiteHeader = () => {
       <nav className="container mx-auto flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2" aria-label="AutoAdvance Marketing Home">
           <img src="/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png" alt="AutoAdvance Marketing logo" className="h-8 w-8 object-contain" />
-          <span className="text-xl font-semibold tracking-tight whitespace-nowrap">AutoAdvance Marketing</span>
+          <span className="text-xl font-semibold tracking-tight whitespace-nowrap relative">
+            <span className="text-foreground">AutoAdvance</span>
+            <span style={{color: "hsl(var(--primary))"}}> Marketing</span>
+            <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
+          </span>
         </Link>
         <div className="hidden md:flex items-center gap-4">
           <NavLink to="/" className={({ isActive }) => `story-link ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Home</NavLink>
