@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				heading: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				heading: ['Qwitcher Grypen', 'cursive'],
 				body: ['Lato', 'ui-sans-serif', 'system-ui', 'sans-serif']
 			},
 			colors: {
