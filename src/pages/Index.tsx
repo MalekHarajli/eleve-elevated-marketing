@@ -58,7 +58,7 @@ const Index = () => {
             <div className="max-w-3xl animate-enter">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                Facebook, Instagram, and Google Ads with proven results.
+                Facebook, Instagram, and Google Ads & Socials
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                 <Button asChild className="btn-glow w-full sm:w-auto">
