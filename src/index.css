@@ -154,4 +154,23 @@ All colors MUST be HSL.
   .text-brand-neon {
     color: hsl(var(--brand-neon));
   }
+
+  .highlight-pulse {
+    background: linear-gradient(135deg, hsl(var(--brand-neon)), hsl(var(--primary-glow)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: highlight-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes highlight-glow {
+    0%, 100% {
+      opacity: 0.8;
+      filter: brightness(1);
+    }
+    50% {
+      opacity: 1;
+      filter: brightness(1.3);
+    }
+  }
 }
