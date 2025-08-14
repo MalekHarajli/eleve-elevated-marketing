@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import heroImage from "@/assets/hero-supercar.jpg";
+import heroImage from "@/assets/hero-bmw.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BarChart3, Users, Cog, ArrowRight } from "lucide-react";
@@ -49,7 +49,7 @@ const Index = () => {
       <section className="relative">
         <img
           src={heroImage}
-           alt="Premium supercar hero background with gold accents for AutoAdvance Marketing"
+           alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
           className="w-full h-[60vh] sm:h-[70vh] md:h-[80vh] object-cover"
         />
         <div className="absolute inset-0 overlay-soft" />
