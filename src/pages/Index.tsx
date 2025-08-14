@@ -143,7 +143,8 @@ const Index = () => {
               <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
-                <div>- Refinements & improvements</div>
+                <div>- Refinements</div>
+                <div>- Improvements</div>
                 <div>- Monthly ROI</div>
               </div>
             </article>
@@ -189,7 +190,8 @@ const Index = () => {
               <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
-                <div>- Refinements & improvements</div>
+                <div>- Refinements</div>
+                <div>- Improvements</div>
                 <div>- Monthly ROI</div>
               </div>
             </article>
