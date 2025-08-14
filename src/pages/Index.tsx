@@ -132,7 +132,7 @@ const Index = () => {
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
                 <div>- Increase growth</div>
-                <div>- Increase engagement</div>
+                <div>- More engagement</div>
                 <div>- Build trust</div>
               </div>
             </article>
@@ -179,7 +179,7 @@ const Index = () => {
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
                 <div>- Increase growth</div>
-                <div>- Increase engagement</div>
+                <div>- More engagement</div>
                 <div>- Build trust</div>
               </div>
             </article>
