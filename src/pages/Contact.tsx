@@ -107,7 +107,7 @@ const Contact = () => {
               <div className="border rounded-lg overflow-hidden h-[300px]">
                 <iframe
                   title="Downtown Detroit Map"
-                  src="https://maps.apple.com/embed?q=Downtown%20Detroit%2C%20MI&t=m&z=15"
+                  src="https://maps.google.com/maps?q=Downtown%20Detroit%2C%20MI&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   loading="lazy"
