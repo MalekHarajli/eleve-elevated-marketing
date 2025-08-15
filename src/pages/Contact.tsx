@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, Loader2 } from "lucide-react";
+import { Mail, Phone, Instagram, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
@@ -189,6 +189,7 @@ const Contact = () => {
                 <ul className="space-y-2 text-muted-foreground flex-1 flex flex-col justify-center">
                   <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>
                   <li className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</li>
+                  <li className="flex items-center gap-2"><Instagram size={16} /> @autoadvancemarketing</li>
                 </ul>
               </div>
               <div className="border rounded-lg overflow-hidden flex-1">

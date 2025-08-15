@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Instagram } from "lucide-react";
 
 const SiteFooter = () => {
   const year = new Date().getFullYear();
@@ -28,6 +28,7 @@ const SiteFooter = () => {
           <ul className="space-y-2 text-muted-foreground">
             <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>
             <li className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</li>
+            <li className="flex items-center gap-2"><Instagram size={16} /> @autoadvancemarketing</li>
           </ul>
         </div>
       </div>
