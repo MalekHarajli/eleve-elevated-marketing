@@ -131,6 +131,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 md:gap-10">
           <form onSubmit={onSubmit} className="space-y-5 border rounded-lg p-5 sm:p-6 bg-card">
+            <h3 className="text-2xl font-semibold text-primary mb-6">Start Today</h3>
             {/* Honeypot field - hidden from users */}
             <Input 
               name="companyWebsite" 
