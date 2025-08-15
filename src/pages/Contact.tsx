@@ -126,15 +126,15 @@ const Contact = () => {
           })}</script>
         </Helmet>
 
-      <section className="container mx-auto px-4 py-16">
-        <header className="max-w-2xl mb-8">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-3">Contact Our Specialists</h1>
-          <p className="text-lg text-muted-foreground">Get expert Facebook ads manager services and social media marketing agency solutions. Free consultation with a top-rated marketing agency near me.</p>
+      <section className="container mx-auto px-4 py-12 sm:py-16">
+        <header className="max-w-2xl mb-6 sm:mb-8 text-center sm:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-3 leading-tight">Contact Our Specialists</h1>
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">Get expert Facebook ads manager services and social media marketing agency solutions. Free consultation with a top-rated marketing agency near me.</p>
         </header>
 
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-10">
-          <form onSubmit={onSubmit} className="space-y-5 border rounded-lg p-5 sm:p-6 bg-card">
-            <h3 className="text-2xl font-semibold text-primary mb-6">Start Today</h3>
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+          <form onSubmit={onSubmit} className="space-y-4 sm:space-y-5 border rounded-lg p-4 sm:p-5 md:p-6 bg-card">
+            <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-4 sm:mb-6">Start Today</h3>
             {/* Honeypot field - hidden from users */}
             <Input 
               name="companyWebsite" 
@@ -150,55 +150,63 @@ const Contact = () => {
               aria-hidden="true"
             />
             
-            <div className="grid md:grid-cols-2 gap-5">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
               <div>
-                <Label htmlFor="name">Name *</Label>
-                <Input id="name" name="name" required autoComplete="name" className="h-11" />
+                <Label htmlFor="name" className="text-sm font-medium">Name *</Label>
+                <Input id="name" name="name" required autoComplete="name" className="h-10 sm:h-11 mt-1" />
               </div>
               <div>
-                <Label htmlFor="businessName">Business Name</Label>
-                <Input id="businessName" name="businessName" autoComplete="organization" className="h-11" />
+                <Label htmlFor="businessName" className="text-sm font-medium">Business Name</Label>
+                <Input id="businessName" name="businessName" autoComplete="organization" className="h-10 sm:h-11 mt-1" />
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-5">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
               <div>
-                <Label htmlFor="email">Email *</Label>
-                <Input id="email" name="email" type="email" required autoComplete="email" className="h-11" />
+                <Label htmlFor="email" className="text-sm font-medium">Email *</Label>
+                <Input id="email" name="email" type="email" required autoComplete="email" className="h-10 sm:h-11 mt-1" />
               </div>
               <div>
-                <Label htmlFor="phone">Phone *</Label>
-                <Input id="phone" name="phone" type="tel" required autoComplete="tel" inputMode="tel" className="h-11" />
+                <Label htmlFor="phone" className="text-sm font-medium">Phone *</Label>
+                <Input id="phone" name="phone" type="tel" required autoComplete="tel" inputMode="tel" className="h-10 sm:h-11 mt-1" />
               </div>
             </div>
             <div>
-              <Label htmlFor="message">Message * <span className="text-sm text-muted-foreground">(max 1000 characters)</span></Label>
-              <Textarea id="message" name="message" required maxLength={1000} className="min-h-[140px] p-3" />
+              <Label htmlFor="message" className="text-sm font-medium">Message * <span className="text-xs text-muted-foreground">(max 1000 characters)</span></Label>
+              <Textarea id="message" name="message" required maxLength={1000} className="min-h-[120px] sm:min-h-[140px] p-3 mt-1 text-sm" />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="btn-glow w-full md:w-auto">
+            <Button type="submit" disabled={isSubmitting} className="btn-glow w-full sm:w-auto text-sm sm:text-base px-6 py-3">
               {isSubmitting ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Sending...
+                  <span className="hidden sm:inline">Sending...</span>
+                  <span className="sm:hidden">Sending</span>
                 </>
               ) : (
-                'Book My Free Consultation'
+                <>
+                  <span className="hidden sm:inline">Book My Free Consultation</span>
+                  <span className="sm:hidden">Book Consultation</span>
+                </>
               )}
             </Button>
           </form>
 
-          <aside className="space-y-6">
-            <div className="grid grid-cols-2 gap-6 h-full">
-              <div className="border rounded-lg p-5 sm:p-6 bg-card flex flex-col">
-                <h3 className="text-lg font-semibold text-primary mb-3">Contact Info</h3>
-                <div className="space-y-4 text-muted-foreground">
-                  <div className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</div>
-                  
-                  <div className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</div>
-                  
-                  <div className="flex items-center gap-2"><Instagram size={16} /> @autoadvancemarketing</div>
+          <aside className="space-y-4 sm:space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 h-full">
+              <div className="border rounded-lg p-4 sm:p-5 md:p-6 bg-card flex flex-col">
+                <h3 className="text-base sm:text-lg font-semibold text-primary mb-3">Contact Info</h3>
+                <div className="space-y-3 sm:space-y-4 text-muted-foreground text-sm sm:text-base">
+                  <div className="flex items-center gap-2"><Phone size={14} className="sm:w-4 sm:h-4 flex-shrink-0" /> 
+                    <span className="break-all">+1(313)-970-5903</span>
+                  </div>
+                  <div className="flex items-center gap-2"><Mail size={14} className="sm:w-4 sm:h-4 flex-shrink-0" /> 
+                    <span className="break-all">autoadvancem@gmail.com</span>
+                  </div>
+                  <div className="flex items-center gap-2"><Instagram size={14} className="sm:w-4 sm:h-4 flex-shrink-0" /> 
+                    <span className="break-all">@autoadvancemarketing</span>
+                  </div>
                 </div>
               </div>
-              <div className="border rounded-lg overflow-hidden flex-1">
+              <div className="border rounded-lg overflow-hidden flex-1 min-h-[200px] sm:min-h-[250px]">
                 <iframe
                   title="Downtown Detroit Map"
                   src="https://maps.google.com/maps?q=Downtown%20Detroit%2C%20MI&t=&z=15&ie=UTF8&iwloc=&output=embed"

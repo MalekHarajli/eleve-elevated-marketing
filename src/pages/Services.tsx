@@ -14,23 +14,23 @@ const ServiceCard = ({
   points: string[];
   ctaLabel: string;
 }) => (
-  <article className="border rounded-lg p-6 hover-scale bg-card">
-    <div className="flex items-center gap-3 mb-4">
-      <Icon className="text-primary" />
-      <div>
-        <h3 className="text-xl font-semibold text-primary">{title}</h3>
+  <article className="border rounded-lg p-4 sm:p-5 md:p-6 hover-scale bg-card">
+    <div className="flex items-start gap-3 mb-4">
+      <Icon className="text-primary h-6 w-6 flex-shrink-0 mt-1" />
+      <div className="min-w-0">
+        <h3 className="text-lg sm:text-xl font-semibold text-primary leading-tight">{title}</h3>
         {(title === "Premium Website Package" || title === "Basic Website Package") && (
-          <p className="text-sm text-white">(Add-On)</p>
+          <p className="text-xs sm:text-sm text-white">(Add-On)</p>
         )}
       </div>
     </div>
-    <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+    <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base text-muted-foreground leading-relaxed">
       {points.map((p) => (
         <li key={p}>{p}</li>
       ))}
     </ul>
     <div className="mt-6">
-      <Button asChild className="btn-glow">
+      <Button asChild className="btn-glow w-full sm:w-auto text-sm sm:text-base">
         <Link to="/contact">{ctaLabel}</Link>
       </Button>
     </div>
@@ -70,13 +70,13 @@ const Services = () => {
           })}</script>
         </Helmet>
 
-      <section className="container mx-auto py-16">
-        <header className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-semibold mb-4">SERVICES WE OFFER</h1>
-          <p className="text-lg text-muted-foreground">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
+      <section className="container mx-auto px-4 py-12 sm:py-16">
+        <header className="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-3 sm:mb-4 leading-tight">SERVICES WE OFFER</h1>
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
         </header>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-10">
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           <ServiceCard
             Icon={Megaphone}
             title="Meta Ads Management"
@@ -124,19 +124,22 @@ const Services = () => {
           />
         </div>
 
-        <div className="mt-14 border rounded-lg p-8 bg-card">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-            <div className="flex items-center gap-3 text-muted-foreground">
-              <Target className="text-primary" />
+        <div className="mt-10 sm:mt-14 border rounded-lg p-4 sm:p-6 md:p-8 bg-card">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-sm sm:text-base text-muted-foreground">
+              <Target className="text-primary h-5 w-5" />
               <span>Strategy</span>
-              <BarChart3 className="text-primary" />
+              <BarChart3 className="text-primary h-5 w-5" />
               <span>Execution</span>
-              <LineChart className="text-primary" />
+              <LineChart className="text-primary h-5 w-5" />
               <span>Results</span>
             </div>
-            <div className="md:ml-auto">
-              <Button asChild className="btn-glow">
-                <Link to="/contact">Get Your Custom Growth Plan</Link>
+            <div className="w-full md:w-auto md:ml-auto">
+              <Button asChild className="btn-glow w-full md:w-auto text-sm sm:text-base">
+                <Link to="/contact">
+                  <span className="hidden sm:inline">Get Your Custom Growth Plan</span>
+                  <span className="sm:hidden">Get Growth Plan</span>
+                </Link>
               </Button>
             </div>
           </div>
