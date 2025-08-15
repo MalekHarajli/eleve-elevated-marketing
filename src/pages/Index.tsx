@@ -75,6 +75,7 @@ const Index = () => {
 
       {/* Benefits */}
       <section className="container mx-auto px-4 pt-16 pb-8">
+        <h2 className="text-2xl font-semibold text-primary mb-8">What We Do</h2>
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
             <BarChart3 className="text-brand-gold mb-3" />
