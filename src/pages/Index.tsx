@@ -74,7 +74,7 @@ const Index = () => {
       </section>
 
       {/* Benefits */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 pt-16 pb-8">
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
             <BarChart3 className="text-brand-gold mb-3" />
@@ -96,7 +96,7 @@ const Index = () => {
 
       {/* Process */}
       <section className="bg-background">
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 pt-8 pb-8">
           <h2 className="text-2xl font-semibold text-primary mb-8">How We Drive Results</h2>
 
           {/* Desktop: horizontal steps with gold connectors */}
@@ -223,7 +223,7 @@ const Index = () => {
 
       {/* Testimonials */}
       <section className="bg-background">
-        <div className="container mx-auto px-4 pb-24">
+        <div className="container mx-auto px-4 pt-8 pb-24">
           <h2 className="text-2xl font-semibold text-primary mb-6">What Clients Say</h2>
           <ReviewsCarousel />
         </div>
