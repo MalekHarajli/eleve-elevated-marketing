@@ -12,6 +12,8 @@ const SiteFooter = () => {
             <span className="relative">
               <span className="text-foreground">Auto Advance</span>
               <span style={{color: "hsl(var(--primary))"}}> Marketing</span>
+              <br />
+              <span style={{color: "hsl(var(--primary))"}}>data</span>
               <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
             </span>
           </h3>
