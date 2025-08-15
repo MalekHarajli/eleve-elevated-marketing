@@ -109,10 +109,10 @@ const Index = () => {
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
               <div className="text-muted-foreground">
-                <div>- Goals</div>
-                <div>- Target audience</div>
                 <div>- Custom marketing</div>
+                <div>- Target audience</div>
                 <div>- Tracking setup</div>
+                <div>- Goals</div>
               </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
@@ -124,10 +124,10 @@ const Index = () => {
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
               <div className="text-muted-foreground">
-                <div>- Facebook Ads</div>
-                <div>- Instagram Ads</div>
-                <div>- Google Ads</div>
                 <div>- Precision targeting</div>
+                <div>- Instagram Ads</div>
+                <div>- Facebook Ads</div>
+                <div>- Google Ads</div>
               </div>
             </article>
             <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
@@ -140,8 +140,8 @@ const Index = () => {
               </div>
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
-                <div>- Increase growth</div>
                 <div>- More engagement</div>
+                <div>- Increase growth</div>
                 <div>- Build trust</div>
               </div>
             </article>
@@ -155,8 +155,8 @@ const Index = () => {
               </div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
-                <div>- Refinements</div>
                 <div>- Improvements</div>
+                <div>- Refinements</div>
                 <div>- Monthly ROI</div>
               </div>
             </article>
@@ -170,10 +170,10 @@ const Index = () => {
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
               <div className="text-muted-foreground">
-                <div>- Goals</div>
-                <div>- Target audience</div>
                 <div>- Custom marketing</div>
+                <div>- Target audience</div>
                 <div>- Tracking setup</div>
+                <div>- Goals</div>
               </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
@@ -184,10 +184,10 @@ const Index = () => {
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
               <div className="text-muted-foreground">
-                <div>- Facebook Ads</div>
-                <div>- Instagram Ads</div>
-                <div>- Google Ads</div>
                 <div>- Precision targeting</div>
+                <div>- Instagram Ads</div>
+                <div>- Facebook Ads</div>
+                <div>- Google Ads</div>
               </div>
             </article>
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
@@ -199,8 +199,8 @@ const Index = () => {
               </div>
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
-                <div>- Increase growth</div>
                 <div>- More engagement</div>
+                <div>- Increase growth</div>
                 <div>- Build trust</div>
               </div>
             </article>
@@ -213,8 +213,8 @@ const Index = () => {
               </div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
-                <div>- Refinements</div>
                 <div>- Improvements</div>
+                <div>- Refinements</div>
                 <div>- Monthly ROI</div>
               </div>
             </article>
