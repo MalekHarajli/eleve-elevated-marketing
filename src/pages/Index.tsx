@@ -104,7 +104,7 @@ const Index = () => {
           <div className="hidden md:flex items-stretch">
             {/* Strategy & Onboarding */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Strategy & Onboarding
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
@@ -119,7 +119,7 @@ const Index = () => {
 
             {/* Targeted Ads */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Targeted Ads
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
@@ -134,7 +134,7 @@ const Index = () => {
 
             {/* Consistent Content */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Consistent Content
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
@@ -149,7 +149,7 @@ const Index = () => {
 
             {/* Optimization & Reporting */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Optimization & Reporting
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
@@ -165,7 +165,7 @@ const Index = () => {
           {/* Mobile: stacked steps with vertical connectors */}
           <div className="md:hidden flex flex-col">
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Strategy & Onboarding
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
@@ -179,7 +179,7 @@ const Index = () => {
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Targeted Ads
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
@@ -193,7 +193,7 @@ const Index = () => {
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Consistent Content
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
@@ -207,7 +207,7 @@ const Index = () => {
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
+              <div className="text-primary font-semibold text-lg mb-3 relative">
                 Optimization & Reporting
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
               </div>
