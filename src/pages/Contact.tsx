@@ -185,7 +185,7 @@ const Contact = () => {
           <aside className="space-y-6">
             <div className="grid grid-cols-2 gap-6 h-full">
               <div className="border rounded-lg p-5 sm:p-6 bg-card flex flex-col">
-                <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
+                <h3 className="text-lg font-semibold text-primary mb-3">Contact Info</h3>
                 <div className="space-y-4 text-muted-foreground">
                   <div className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</div>
                   

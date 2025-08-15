@@ -18,7 +18,7 @@ const ServiceCard = ({
     <div className="flex items-center gap-3 mb-4">
       <Icon className="text-primary" />
       <div>
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <h3 className="text-xl font-semibold text-primary">{title}</h3>
         {(title === "Premium Website Package" || title === "Basic Website Package") && (
           <p className="text-sm text-white">(Add-On)</p>
         )}
