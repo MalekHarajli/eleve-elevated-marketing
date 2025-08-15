@@ -16,7 +16,7 @@ const SiteFooter = () => {
             </span>
           </h3>
           <p className="text-muted-foreground mt-2">
-            Helping Detroit businesses rise above the noise with<br />data-driven Meta Ads and engaging social content.
+            Helping Detroit businesses rise above the noise with <br />data-driven Meta Ads and engaging social content.
           </p>
         </div>
         <div>
