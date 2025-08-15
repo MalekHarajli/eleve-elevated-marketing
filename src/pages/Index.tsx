@@ -97,13 +97,13 @@ const Index = () => {
       {/* Process */}
       <section className="bg-background">
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-2xl font-semibold mb-8">How We Drive Results</h2>
+          <h2 className="text-2xl font-semibold text-primary mb-8">How We Drive Results</h2>
 
           {/* Desktop: horizontal steps with gold connectors */}
           <div className="hidden md:flex items-stretch">
             {/* Strategy & Onboarding */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
+              <div className="text-primary font-semibold text-lg mb-3">Strategy & Onboarding</div>
               <div className="text-muted-foreground">
                 <div>- Goals</div>
                 <div>- Target audience</div>
@@ -115,7 +115,7 @@ const Index = () => {
 
             {/* Targeted Ads */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Targeted<br />Ads</div>
+              <div className="text-primary font-semibold text-lg mb-3">Targeted<br />Ads</div>
               <div className="text-muted-foreground">
                 <div>- Facebook Ads</div>
                 <div>- Instagram Ads</div>
@@ -127,7 +127,7 @@ const Index = () => {
 
             {/* Consistent Content */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
+              <div className="text-primary font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
                 <div>- Increase growth</div>
@@ -139,7 +139,7 @@ const Index = () => {
 
             {/* Optimization & Reporting */}
             <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
+              <div className="text-primary font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
                 <div>- Refinements</div>
@@ -152,7 +152,7 @@ const Index = () => {
           {/* Mobile: stacked steps with vertical connectors */}
           <div className="md:hidden flex flex-col">
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Strategy & Onboarding</div>
+              <div className="text-primary font-semibold text-lg mb-3">Strategy & Onboarding</div>
               <div className="text-muted-foreground">
                 <div>- Goals</div>
                 <div>- Target audience</div>
@@ -163,7 +163,7 @@ const Index = () => {
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Targeted<br />Ads</div>
+              <div className="text-primary font-semibold text-lg mb-3">Targeted<br />Ads</div>
               <div className="text-muted-foreground">
                 <div>- Facebook Ads</div>
                 <div>- Instagram Ads</div>
@@ -174,7 +174,7 @@ const Index = () => {
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Consistent Content</div>
+              <div className="text-primary font-semibold text-lg mb-3">Consistent Content</div>
               <div className="text-muted-foreground">
                 <div>- 3 posts per week</div>
                 <div>- Increase growth</div>
@@ -185,7 +185,7 @@ const Index = () => {
             <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
 
             <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3">Optimization & Reporting</div>
+              <div className="text-primary font-semibold text-lg mb-3">Optimization & Reporting</div>
               <div className="text-muted-foreground">
                 <div>- Ongoing tracking</div>
                 <div>- Refinements</div>
@@ -200,7 +200,7 @@ const Index = () => {
       {/* Testimonials */}
       <section className="bg-background">
         <div className="container mx-auto px-4 pb-24">
-          <h2 className="text-2xl font-semibold mb-6">What Clients Say</h2>
+          <h2 className="text-2xl font-semibold text-primary mb-6">What Clients Say</h2>
           <ReviewsCarousel />
         </div>
       </section>
