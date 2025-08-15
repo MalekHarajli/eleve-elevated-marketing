@@ -78,18 +78,18 @@ const Index = () => {
         <h2 className="text-2xl font-semibold text-primary mb-8">What We Do</h2>
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
-            <BarChart3 className="text-brand-gold mb-3" />
-            <h3 className="text-xl font-semibold text-primary mb-2">Targeted Ad Campaign Management</h3>
+            <BarChart3 className="text-primary mb-3" />
+            <h3 className="text-xl font-semibold text-foreground mb-2">Targeted Ad Campaign Management</h3>
             <p className="text-muted-foreground">Expert management of Facebook, Instagram, and Google Ads. We create precision-targeted campaigns, optimize weekly for maximum ROI, and reach ready-to-buy customers with compelling ad creative.</p>
           </article>
           <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
-            <Users className="text-brand-gold mb-3" />
-            <h3 className="text-xl font-semibold text-primary mb-2">Social Media Management & Growth</h3>
+            <Users className="text-primary mb-3" />
+            <h3 className="text-xl font-semibold text-foreground mb-2">Social Media Management & Growth</h3>
             <p className="text-muted-foreground">Consistent, branded content to grow your audience and build trust. Includes 3 high-quality posts per week, engagement strategies, and seasonal campaigns to keep your brand top-of-mind.</p>
           </article>
           <article className="border rounded-lg p-5 sm:p-6 hover-scale bg-card">
-            <Cog className="text-brand-gold mb-3" />
-            <h3 className="text-xl font-semibold text-primary mb-2">Website Creation & Maintenance (Add-On)</h3>
+            <Cog className="text-primary mb-3" />
+            <h3 className="text-xl font-semibold text-foreground mb-2">Website Creation & Maintenance (Add-On)</h3>
             <p className="text-muted-foreground">Custom, SEO-friendly websites designed to convert visitors into customers. Includes responsive design, ongoing maintenance, and updates to keep your online presence fresh.</p>
           </article>
         </div>
