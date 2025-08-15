@@ -66,7 +66,10 @@ const Contact = () => {
       });
 
       // Reset form and redirect
-      e.currentTarget.reset();
+      const form = e.currentTarget;
+      if (form) {
+        form.reset();
+      }
       setTimeout(() => {
         navigate('/thank-you');
       }, 1500);
