@@ -76,7 +76,7 @@ const Services = () => {
           <p className="text-lg text-muted-foreground">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
         </header>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="grid md:grid-cols-2 gap-6 mt-10">
           <ServiceCard
             Icon={Megaphone}
             title="Meta Ads Management"
