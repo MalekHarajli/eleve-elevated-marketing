@@ -186,11 +186,13 @@ const Contact = () => {
             <div className="grid grid-cols-2 gap-6 h-full">
               <div className="border rounded-lg p-5 sm:p-6 bg-card flex flex-col">
                 <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
-                <ul className="space-y-2 text-muted-foreground flex-1 flex flex-col justify-center">
-                  <li className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</li>
-                  <li className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</li>
-                  <li className="flex items-center gap-2"><Instagram size={16} /> @autoadvancemarketing</li>
-                </ul>
+                <div className="space-y-4 text-muted-foreground">
+                  <div className="flex items-center gap-2"><Phone size={16} /> +1(313)-970-5903</div>
+                  
+                  <div className="flex items-center gap-2"><Mail size={16} /> autoadvancem@gmail.com</div>
+                  
+                  <div className="flex items-center gap-2"><Instagram size={16} /> @autoadvancemarketing</div>
+                </div>
               </div>
               <div className="border rounded-lg overflow-hidden flex-1">
                 <iframe
