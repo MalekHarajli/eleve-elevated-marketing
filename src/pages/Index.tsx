@@ -9,21 +9,21 @@ const Index = () => {
   return (
     <main>
         <Helmet>
-          <title>AutoAdvance Marketing | Official Site — Detroit, MI</title>
-          <meta name="description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, consistent content, and clear ROI reporting." />
+          <title>AutoAdvance Marketing (Auto Advance Marketing) — Official Site, Detroit MI</title>
+          <meta name="description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, weekly content, and clear ROI reporting." />
           <link rel="canonical" href="https://autoadvancemarketing.com/" />
 
           {/* Open Graph */}
-          <meta property="og:title" content="AutoAdvance Marketing | Official Site — Detroit, MI" />
-          <meta property="og:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, consistent content, and clear ROI reporting." />
+          <meta property="og:title" content="AutoAdvance Marketing (Auto Advance Marketing) — Official Site, Detroit MI" />
+          <meta property="og:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, weekly content, and clear ROI reporting." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://autoadvancemarketing.com/" />
           <meta property="og:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="AutoAdvance Marketing | Official Site — Detroit, MI" />
-          <meta name="twitter:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, consistent content, and clear ROI reporting." />
+          <meta name="twitter:title" content="AutoAdvance Marketing (Auto Advance Marketing) — Official Site, Detroit MI" />
+          <meta name="twitter:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, weekly content, and clear ROI reporting." />
           <meta name="twitter:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
           {/* Structured Data - Organization + WebSite */}
@@ -34,16 +34,7 @@ const Index = () => {
             alternateName: ["Auto Advance Marketing", "AutoAdvanceMarketing"],
             url: "https://autoadvancemarketing.com/",
             logo: "https://autoadvancemarketing.com/favicon-48x48.png",
-            sameAs: [
-              "https://facebook.com/yourpage",
-              "https://instagram.com/yourpage",
-              "https://www.linkedin.com/company/yourcompany"
-            ],
-            potentialAction: {
-              "@type": "SearchAction",
-              target: "https://autoadvancemarketing.com/?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
+            sameAs: []
           })}</script>
         </Helmet>
 
@@ -58,7 +49,9 @@ const Index = () => {
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-3 sm:mb-4 leading-tight">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-2 leading-tight">AutoAdvance Marketing</h1>
+              <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">Also known as Auto Advance Marketing (same company)</p>
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-3 sm:mb-4 leading-tight">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-6 sm:mb-8">
                 Facebook, Instagram, and Google Ads & Socials
               </p>

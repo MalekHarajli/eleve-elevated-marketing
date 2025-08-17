@@ -41,12 +41,12 @@ const Services = () => {
   return (
     <main>
         <Helmet>
-          <title>Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing</title>
+          <title>Services — SMMA, Facebook & Instagram Ads</title>
           <meta name="description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <link rel="canonical" href="https://autoadvancemarketing.com/services" />
 
           {/* Open Graph */}
-          <meta property="og:title" content="Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing" />
+          <meta property="og:title" content="Services — SMMA, Facebook & Instagram Ads" />
           <meta property="og:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://autoadvancemarketing.com/services" />
@@ -54,7 +54,7 @@ const Services = () => {
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing" />
+          <meta name="twitter:title" content="Services — SMMA, Facebook & Instagram Ads" />
           <meta name="twitter:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <meta name="twitter:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
@@ -74,7 +74,7 @@ const Services = () => {
         <header className="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
           <div className="mb-4">
             <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              AutoAdvance Marketing — Home
+              Learn more about us at AutoAdvance Marketing — Home
             </Link>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-3 sm:mb-4 leading-tight">SERVICES WE OFFER</h1>
