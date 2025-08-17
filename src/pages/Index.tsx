@@ -9,39 +9,43 @@ const Index = () => {
   return (
     <main>
         <Helmet>
-          <title>High-Performance Ads & Social Media Growth | AutoAdvance Marketing</title>
-          <meta name="description" content="Social media marketing agency for Facebook, Instagram, and Google ads management, branded content, and high-converting websites. Book a free consultation." />
-          <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
+          <title>AutoAdvance Marketing | Official Site — Detroit, MI</title>
+          <meta name="description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, consistent content, and clear ROI reporting." />
+          <link rel="canonical" href="https://autoadvancemarketing.com/" />
 
           {/* Open Graph */}
-          <meta property="og:title" content="High-Performance Ads & Social Media Growth | AutoAdvance Marketing" />
-          <meta property="og:description" content="Social media marketing agency for Facebook, Instagram, and Google ads management, branded content, and high-converting websites. Book a free consultation." />
+          <meta property="og:title" content="AutoAdvance Marketing | Official Site — Detroit, MI" />
+          <meta property="og:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, consistent content, and clear ROI reporting." />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/'} />
-          <meta property="og:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
+          <meta property="og:url" content="https://autoadvancemarketing.com/" />
+          <meta property="og:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="High-Performance Ads & Social Media Growth | AutoAdvance Marketing" />
-          <meta name="twitter:description" content="Social media marketing agency for Facebook, Instagram, and Google ads management, branded content, and high-converting websites. Book a free consultation." />
-          <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
+          <meta name="twitter:title" content="AutoAdvance Marketing | Official Site — Detroit, MI" />
+          <meta name="twitter:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, consistent content, and clear ROI reporting." />
+          <meta name="twitter:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
-          {/* Structured Data */}
+          {/* Structured Data - Organization */}
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "AutoAdvance Marketing",
-            description: "SMMA and Facebook ads manager delivering ROI-focused campaigns.",
-            url: typeof window !== 'undefined' ? window.location.origin : 'https://eleve-marketing.example.com',
-            logo: typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png',
-            areaServed: ["United States", "Detroit, MI"],
-            contactPoint: [{
-              "@type": "ContactPoint",
-              contactType: "sales",
-              telephone: "+1(313)-970-5903",
-              email: "autoadvancem@gmail.com",
-              availableLanguage: ["English"]
-            }]
+            url: "https://autoadvancemarketing.com/",
+            logo: "https://autoadvancemarketing.com/favicon-48x48.png"
+          })}</script>
+
+          {/* Structured Data - WebSite with SearchAction */}
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "AutoAdvance Marketing",
+            url: "https://autoadvancemarketing.com/",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://autoadvancemarketing.com/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
           })}</script>
         </Helmet>
 

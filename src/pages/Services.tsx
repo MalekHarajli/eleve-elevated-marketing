@@ -43,20 +43,20 @@ const Services = () => {
         <Helmet>
           <title>Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing</title>
           <meta name="description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
-          <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
+          <link rel="canonical" href="https://autoadvancemarketing.com/services" />
 
           {/* Open Graph */}
           <meta property="og:title" content="Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing" />
           <meta property="og:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://eleve-marketing.example.com/services'} />
-          <meta property="og:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
+          <meta property="og:url" content="https://autoadvancemarketing.com/services" />
+          <meta property="og:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Services — SMMA, Facebook & Instagram Ads | AutoAdvance Marketing" />
           <meta name="twitter:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
-          <meta name="twitter:image" content={typeof window !== 'undefined' ? `${window.location.origin}/lovable-uploads/4e4a385a-969d-4ff6-b1e5-16f37c5f87d7.png` : 'https://eleve-marketing.example.com/logo.png'} />
+          <meta name="twitter:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
           {/* Structured Data */}
           <script type="application/ld+json">{JSON.stringify({
@@ -72,6 +72,11 @@ const Services = () => {
 
       <section className="container mx-auto px-4 py-12 sm:py-16">
         <header className="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
+          <div className="mb-4">
+            <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              AutoAdvance Marketing — Home
+            </Link>
+          </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-3 sm:mb-4 leading-tight">SERVICES WE OFFER</h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
         </header>

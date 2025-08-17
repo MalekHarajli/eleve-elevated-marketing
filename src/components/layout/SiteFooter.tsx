@@ -9,11 +9,10 @@ const SiteFooter = () => {
         <div>
           <h3 className="text-lg font-semibold flex items-center gap-2 whitespace-nowrap">
             <img src="/lovable-uploads/17064b5e-75fa-41f7-9c8c-d6125f47bcef.png" alt="AutoAdvance Marketing logo" className="h-6 w-6 object-contain" />
-            <span className="relative">
-              <span className="text-foreground">Auto Advance</span>
-              <span style={{color: "hsl(var(--primary))"}}> Marketing</span>
+            <Link to="/" className="relative hover:text-primary transition-colors">
+              <span className="text-foreground">AutoAdvance Marketing</span>
               <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
-            </span>
+            </Link>
           </h3>
           <p className="text-muted-foreground mt-2">
             Helping Detroit businesses rise above the noise with <br />data-driven Meta Ads and engaging social content.

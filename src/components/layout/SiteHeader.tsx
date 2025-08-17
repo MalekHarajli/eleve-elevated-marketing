@@ -9,8 +9,7 @@ const SiteHeader = () => {
         <Link to="/" className="flex items-center gap-2" aria-label="AutoAdvance Marketing Home">
           <img src="/lovable-uploads/703de4ae-7ffc-45a2-82c7-dfafcecd712c.png" alt="AutoAdvance Marketing logo" className="h-7 w-7 sm:h-8 sm:w-8 object-contain" />
           <span className="text-lg sm:text-xl font-heading font-semibold tracking-tight whitespace-nowrap relative">
-            <span className="text-foreground">Auto Advance</span>
-            <span style={{color: "hsl(var(--primary))"}}> Marketing</span>
+            <span className="text-foreground">AutoAdvance Marketing</span>
             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
           </span>
         </Link>
