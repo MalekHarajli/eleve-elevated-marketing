@@ -36,9 +36,14 @@ const SiteFooter = () => {
         </div>
       </div>
       <div className="border-t">
-        <div className="container mx-auto py-6 text-sm text-muted-foreground flex items-center justify-between">
-          <span>© {year} AutoAdvance Marketing. All rights reserved.</span>
-          <span>Designed for performance and growth.</span>
+        <div className="container mx-auto py-6 text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
+            <span>© {year} AutoAdvance Marketing. All rights reserved.</span>
+            <span>Designed for performance and growth.</span>
+          </div>
+          <div className="text-center mt-3 text-xs">
+            Also known as Auto Advance Marketing and AutoAdvanceMarketing.
+          </div>
         </div>
       </div>
     </footer>

@@ -26,21 +26,19 @@ const Index = () => {
           <meta name="twitter:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, consistent content, and clear ROI reporting." />
           <meta name="twitter:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
 
-          {/* Structured Data - Organization */}
+          {/* Structured Data - Organization + WebSite */}
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": ["Organization", "WebSite"],
             name: "AutoAdvance Marketing",
+            alternateName: ["Auto Advance Marketing", "AutoAdvanceMarketing"],
             url: "https://autoadvancemarketing.com/",
-            logo: "https://autoadvancemarketing.com/favicon-48x48.png"
-          })}</script>
-
-          {/* Structured Data - WebSite with SearchAction */}
-          <script type="application/ld+json">{JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "AutoAdvance Marketing",
-            url: "https://autoadvancemarketing.com/",
+            logo: "https://autoadvancemarketing.com/favicon-48x48.png",
+            sameAs: [
+              "https://facebook.com/yourpage",
+              "https://instagram.com/yourpage",
+              "https://www.linkedin.com/company/yourcompany"
+            ],
             potentialAction: {
               "@type": "SearchAction",
               target: "https://autoadvancemarketing.com/?q={search_term_string}",
