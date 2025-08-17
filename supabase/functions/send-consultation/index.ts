@@ -33,7 +33,7 @@ const handler = async (req: Request): Promise<Response> => {
 
   try {
     const body: ConsultationRequest = await req.json();
-    console.log("Received consultation request:", { ...body, companyWebsite: body.companyWebsite ? "[HONEYPOT FILLED]" : "[EMPTY]" });
+    console.log("Received consultation request meta:", { pageUrl: body.pageUrl, timestamp: body.timestamp, honeypot: body.companyWebsite ? "[HONEYPOT FILLED]" : "[EMPTY]" });
 
     // Honeypot check - silently drop if filled
     if (body.companyWebsite && body.companyWebsite.trim() !== "") {
@@ -96,7 +96,7 @@ ${message}
 Page URL: ${body.pageUrl}
 Submitted At: ${body.timestamp}`;
 
-    console.log("Sending notification email with subject:", emailSubject);
+    console.log("Sending notification email");
 
     const notificationResponse = await resend.emails.send({
       from: "AutoAdvance <onboarding@resend.dev>",
@@ -129,7 +129,7 @@ The AutoAdvance Marketing Team
 This email was sent in response to your consultation request submitted on ${new Date(body.timestamp).toLocaleDateString()}.
 If you have any questions, you can reply to this email or call us at +1(313)-970-5903.`;
 
-    console.log("Sending thank you email to:", email);
+    console.log("Sending thank you email to:", email.replace(/(^.{2}).*(@.*$)/, "$1***$2"));
 
     const thankYouResponse = await resend.emails.send({
       from: "AutoAdvance <onboarding@resend.dev>",
