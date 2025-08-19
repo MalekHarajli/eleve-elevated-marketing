@@ -41,9 +41,6 @@ const SiteFooter = () => {
             <span>© {year} AutoAdvance Marketing. All rights reserved.</span>
             <span>Designed for performance and growth.</span>
           </div>
-          <div className="text-center mt-3 text-xs">
-            Also known as Auto Advance Marketing and AutoAdvanceMarketing.
-          </div>
         </div>
       </div>
     </footer>
