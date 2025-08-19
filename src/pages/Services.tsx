@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Megaphone, Users, Layout, LineChart, Target, BarChart3, type LucideIcon } from "lucide-react";
+import { Megaphone, Users, Layout, LineChart, Target, BarChart3, ChevronDown, type LucideIcon } from "lucide-react";
+import { useState } from "react";
 
 const ServiceCard = ({
   Icon,
@@ -38,6 +39,23 @@ const ServiceCard = ({
 );
 
 const Services = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const industries = [
+    { name: "Tint Shops", path: "/tint-shop-marketing" },
+    { name: "Collision Repair / Body Shops", path: "/collision-repair-marketing" },
+    { name: "Oil Change Shops", path: "/oil-change-marketing" },
+    { name: "Tire Shops & Alignment", path: "/tire-shop-marketing" },
+    { name: "Car Dealerships", path: "/car-dealership-marketing" },
+    { name: "Auto Detailing / Car Washes", path: "/detailing-marketing" },
+    { name: "Brake & Muffler Shops", path: "/brake-shop-marketing" },
+    { name: "Transmission Shops", path: "/transmission-shop-marketing" },
+    { name: "Wrap & Vinyl Shops", path: "/wrap-shop-marketing" },
+    { name: "Auto Glass / Window Repair", path: "/auto-glass-marketing" },
+    { name: "Car Audio & Electronics", path: "/car-audio-marketing" },
+    { name: "Custom / Performance Garages", path: "/custom-shop-marketing" },
+  ];
+
   return (
     <main>
         <Helmet>
@@ -127,6 +145,35 @@ const Services = () => {
             ]}
             ctaLabel="Upgrade to Premium"
           />
+        </div>
+
+        {/* Industries We Serve Dropdown */}
+        <div className="mt-10 sm:mt-14">
+          <div className="relative">
+            <button
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              className="w-full flex items-center justify-between text-3xl sm:text-4xl md:text-5xl font-heading font-semibold text-primary leading-tight hover:text-primary/80 transition-colors"
+            >
+              INDUSTRIES WE SERVE
+              <ChevronDown className={`h-8 w-8 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            
+            {isDropdownOpen && (
+              <div className="mt-6 grid gap-3 sm:gap-4 md:grid-cols-2 lg:grid-cols-3 bg-card border rounded-lg p-4 sm:p-6">
+                {industries.map((industry) => (
+                  <Link
+                    key={industry.path}
+                    to={industry.path}
+                    className="block p-3 sm:p-4 border rounded-lg hover:bg-accent/10 hover:border-primary/30 transition-all hover-scale"
+                  >
+                    <span className="text-sm sm:text-base font-medium text-foreground hover:text-primary transition-colors">
+                      {industry.name}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="mt-10 sm:mt-14 border rounded-lg p-4 sm:p-6 md:p-8 bg-card">
