@@ -49,7 +49,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <p className="text-lg sm:text-xl font-heading font-semibold tracking-tight text-muted-foreground mb-3 sm:mb-4 leading-tight md:ml-5">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold tracking-tight text-muted-foreground mb-3 sm:mb-4 leading-tight md:ml-5">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-6 sm:mb-8">
                 Facebook, Instagram, and Google Ads & Socials
               </p>
