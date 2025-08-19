@@ -51,7 +51,7 @@ const Index = () => {
             <div className="max-w-3xl animate-enter">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-2 leading-tight">AutoAdvance <span className="text-primary">Marketing</span></h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-3 sm:mb-4 leading-tight">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
+              <p className="text-2xl sm:text-3xl md:text-4xl text-muted-foreground mb-3 sm:mb-4 leading-tight md:ml-5">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-6 sm:mb-8">
                 Facebook, Instagram, and Google Ads & Socials
               </p>
