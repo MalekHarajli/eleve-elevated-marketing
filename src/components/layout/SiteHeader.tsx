@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-import { Instagram } from "lucide-react";
+import { Instagram, Phone } from "lucide-react";
 
 const SiteHeader = () => {
   return (
@@ -19,6 +19,15 @@ const SiteHeader = () => {
           <NavLink to="/contact" className={({ isActive }) => `story-link text-sm lg:text-base ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Contact</NavLink>
         </div>
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <a
+            href="tel:+1234567890"
+            aria-label="Call AutoAdvance Marketing"
+            title="Call AutoAdvance Marketing"
+            className="inline-flex text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Phone className="h-5 w-5 sm:h-6 sm:w-6" />
+            <span className="sr-only">Call</span>
+          </a>
           <a
             href="https://www.instagram.com/AutoAdvanceMarketing"
             target="_blank"
