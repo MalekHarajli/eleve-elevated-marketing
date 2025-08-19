@@ -49,7 +49,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-2 leading-tight">AutoAdvance Marketing</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-2 leading-tight">AutoAdvance <span className="text-primary">Marketing</span></h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-3 sm:mb-4 leading-tight">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-6 sm:mb-8">

@@ -10,7 +10,7 @@ const SiteFooter = () => {
           <h3 className="text-lg font-semibold flex items-center gap-2 whitespace-nowrap">
             <img src="/lovable-uploads/17064b5e-75fa-41f7-9c8c-d6125f47bcef.png" alt="AutoAdvance Marketing logo" className="h-6 w-6 object-contain" />
             <Link to="/" className="relative hover:text-primary transition-colors">
-              <span className="text-foreground">AutoAdvance Marketing</span>
+              <span className="text-foreground">AutoAdvance <span className="text-primary">Marketing</span></span>
               <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
             </Link>
           </h3>
@@ -38,7 +38,7 @@ const SiteFooter = () => {
       <div className="border-t">
         <div className="container mx-auto py-6 text-sm text-muted-foreground">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
-            <span>© {year} AutoAdvance Marketing. All rights reserved.</span>
+            <span>© {year} AutoAdvance <span className="text-primary">Marketing</span>. All rights reserved.</span>
             <span>Designed for performance and growth.</span>
           </div>
         </div>
