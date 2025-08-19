@@ -19,10 +19,6 @@ const SiteHeader = () => {
           <NavLink to="/contact" className={({ isActive }) => `story-link text-sm lg:text-base ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>Contact</NavLink>
         </div>
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-          <div className="md:hidden flex items-center gap-4">
-            <NavLink to="/services" className={({ isActive }) => `text-xs ${isActive ? 'text-foreground' : 'text-muted-foreground'} hover:text-primary transition-colors`}>Services</NavLink>
-            <NavLink to="/contact" className={({ isActive }) => `text-xs ${isActive ? 'text-foreground' : 'text-muted-foreground'} hover:text-primary transition-colors`}>Contact</NavLink>
-          </div>
           <a
             href="https://www.instagram.com/AutoAdvanceMarketing"
             target="_blank"
