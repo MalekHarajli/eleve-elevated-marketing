@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-import { Facebook, Instagram, Phone } from "lucide-react";
+import { Facebook, Instagram, Phone, Video } from "lucide-react";
 
 const SiteHeader = () => {
   return (
@@ -49,6 +49,17 @@ const SiteHeader = () => {
           >
             <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
             <span className="sr-only">Instagram</span>
+          </a>
+          <a
+            href="https://www.tiktok.com/@autoadvancemarketing"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="AutoAdvance Marketing on TikTok"
+            title="AutoAdvance Marketing on TikTok"
+            className="inline-flex text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Video className="h-5 w-5 sm:h-6 sm:w-6" />
+            <span className="sr-only">TikTok</span>
           </a>
         </div>
       </nav>
