@@ -50,10 +50,22 @@ const Contact = () => {
         throw new Error('Message must be 1000 characters or less');
       }
 
+      console.log('Contact form: invoking send-consultation with data', {
+        name: data.name,
+        businessName: data.businessName,
+        email: data.email,
+        phone: data.phone,
+        messageLength: data.message?.length,
+        pageUrl: data.pageUrl,
+        timestamp: data.timestamp,
+      });
+
       // Call the edge function
       const { error } = await supabase.functions.invoke('send-consultation', {
         body: data,
       });
+
+      console.log('Contact form: send-consultation completed', { error });
 
       if (error) {
         throw new Error(error.message || 'Failed to send consultation request');
