@@ -43,14 +43,14 @@ const Index = () => {
         <img
           src={heroImage}
            alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
-          className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
+          className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
         />
         <div className="absolute inset-0 overlay-soft" />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl animate-enter">
-              <p className="text-4xl sm:text-5xl md:text-6xl font-heading font-semibold tracking-tight text-muted-foreground mb-3 sm:mb-4 leading-tight">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-6 sm:mb-8">
+              <p className="text-3xl sm:text-5xl md:text-6xl font-heading font-semibold tracking-tight text-muted-foreground mb-3 sm:mb-4 leading-tight">Marketing made easy.<br /><span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">SMMA</span><br />High-ROI Ads</p>
+              <p className="text-sm sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 sm:mb-8">
                 Facebook, Instagram, and Google Ads & Socials
               </p>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
