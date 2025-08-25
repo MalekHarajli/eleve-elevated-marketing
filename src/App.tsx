@@ -23,6 +23,7 @@ import CarAudio from "./pages/industries/CarAudio";
 import CustomShop from "./pages/industries/CustomShop";
 import SiteHeader from "./components/layout/SiteHeader";
 import SiteFooter from "./components/layout/SiteFooter";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <SiteHeader />
           <Routes>
             <Route path="/" element={<Index />} />
