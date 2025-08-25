@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import tiktokLogo from "../../assets/tiktok-logo.png";
 import { Facebook, Instagram, Phone } from "lucide-react";
 
 const SiteHeader = () => {
@@ -58,7 +57,7 @@ const SiteHeader = () => {
             title="AutoAdvance Marketing on TikTok"
             className="inline-flex text-muted-foreground hover:text-primary transition-colors"
           >
-            <img src={tiktokLogo} alt="TikTok" className="h-5 w-5 sm:h-6 sm:w-6 object-contain" />
+            <span className="h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center text-sm sm:text-base font-bold">T</span>
             <span className="sr-only">TikTok</span>
           </a>
         </div>
