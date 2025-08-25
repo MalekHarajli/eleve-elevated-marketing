@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import tiktokLogo from "../assets/tiktok-logo.png";
+import tiktokLogo from "../../assets/tiktok-logo.png";
 import { Facebook, Instagram, Phone } from "lucide-react";
 
 const SiteHeader = () => {
