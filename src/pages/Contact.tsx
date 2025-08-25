@@ -21,14 +21,6 @@ const Contact = () => {
     try {
       const formData = new FormData(e.currentTarget);
       
-      // Check honeypot field
-      const companyWebsite = formData.get('companyWebsite') as string;
-      if (companyWebsite && companyWebsite.trim() !== '') {
-        // Silently ignore spam submission
-        setIsSubmitting(false);
-        return;
-      }
-
       // Extract form data
       const data = {
         name: formData.get('name') as string,
