@@ -57,7 +57,7 @@ const SiteHeader = () => {
             title="AutoAdvance Marketing on TikTok"
             className="inline-flex text-muted-foreground hover:text-primary transition-colors"
           >
-            <span className="h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center text-sm sm:text-base font-bold">T</span>
+            <span className="h-5 w-5 sm:h-6 sm:w-6 flex items-center justify-center text-lg sm:text-xl font-bold">T</span>
             <span className="sr-only">TikTok</span>
           </a>
         </div>
