@@ -208,6 +208,10 @@ const Contact = () => {
                   <div className="flex items-center gap-2"><Instagram size={14} className="sm:w-4 sm:h-4 flex-shrink-0" /> 
                     <span className="break-all">@autoadvancemarketing</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <span className="h-3.5 w-3.5 sm:h-4 sm:w-4 flex items-center justify-center text-xs sm:text-sm font-bold flex-shrink-0">T</span>
+                    <span className="break-all">@autoadvancemarketing</span>
+                  </div>
                 </div>
               </div>
               <div className="border rounded-lg overflow-hidden flex-1 min-h-[200px] sm:min-h-[250px]">
