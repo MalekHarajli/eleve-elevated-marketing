@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import heroImage from "@/assets/hero-bmw-bright.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { BarChart3, Users, Cog, ArrowRight } from "lucide-react";
+import { BarChart3, Users, Cog, ArrowRight, Target, Megaphone, Calendar, TrendingUp } from "lucide-react";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 const Index = () => {
@@ -93,122 +93,139 @@ const Index = () => {
         <div className="container mx-auto px-4 pt-8 pb-8">
           <h2 className="text-2xl font-semibold text-primary mb-8">How We Drive Results</h2>
 
-          {/* Desktop: horizontal steps with gold connectors */}
-          <div className="hidden md:flex items-stretch">
+          {/* Desktop: horizontal steps with visual icons */}
+          <div className="hidden md:grid md:grid-cols-4 gap-6">
             {/* Strategy & Onboarding */}
-            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Strategy & Onboarding
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
+            <article className="relative border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <Target className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-3">Strategy & Setup</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>Custom Strategy</div>
+                  <div>Audience Research</div>
+                  <div>Goal Setting</div>
+                </div>
               </div>
-              <div className="text-muted-foreground">
-                <div>- Custom marketing</div>
-                <div>- Target audience</div>
-                <div>- Tracking setup</div>
-                <div>- Goals</div>
+              {/* Connector */}
+              <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <ArrowRight className="text-primary w-6 h-6" />
               </div>
             </article>
-            <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
             {/* Targeted Ads */}
-            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Targeted Ads
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
+            <article className="relative border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <Megaphone className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-3">Targeted Ads</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>Meta Ads</div>
+                  <div>Google Ads</div>
+                  <div>Precision Targeting</div>
+                </div>
               </div>
-              <div className="text-muted-foreground">
-                <div>- Precision targeting</div>
-                <div>- Instagram Ads</div>
-                <div>- Facebook Ads</div>
-                <div>- Google Ads</div>
+              {/* Connector */}
+              <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <ArrowRight className="text-primary w-6 h-6" />
               </div>
             </article>
-            <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
             {/* Consistent Content */}
-            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Consistent Content
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
+            <article className="relative border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <Calendar className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-3">Content Creation</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>3 Posts Weekly</div>
+                  <div>Brand Building</div>
+                  <div>Engagement Growth</div>
+                </div>
               </div>
-              <div className="text-muted-foreground">
-                <div>- 3 posts per week</div>
-                <div>- More engagement</div>
-                <div>- Increase growth</div>
-                <div>- Build trust</div>
+              {/* Connector */}
+              <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <ArrowRight className="text-primary w-6 h-6" />
               </div>
             </article>
-            <div className="flex items-center px-4"><ArrowRight className="text-brand-gold" aria-hidden="true" /></div>
 
             {/* Optimization & Reporting */}
-            <article className="flex-1 border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Optimization & Reporting
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
-              </div>
-              <div className="text-muted-foreground">
-                <div>- Ongoing tracking</div>
-                <div>- Improvements</div>
-                <div>- Refinements</div>
-                <div>- Monthly ROI</div>
+            <article className="border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <TrendingUp className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-3">Optimization</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>Performance Tracking</div>
+                  <div>Monthly Reports</div>
+                  <div>ROI Optimization</div>
+                </div>
               </div>
             </article>
           </div>
 
-          {/* Mobile: stacked steps with vertical connectors */}
-          <div className="md:hidden flex flex-col">
-            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Strategy & Onboarding
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
-              </div>
-              <div className="text-muted-foreground">
-                <div>- Custom marketing</div>
-                <div>- Target audience</div>
-                <div>- Tracking setup</div>
-                <div>- Goals</div>
-              </div>
-            </article>
-            <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
-
-            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Targeted Ads
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
-              </div>
-              <div className="text-muted-foreground">
-                <div>- Precision targeting</div>
-                <div>- Instagram Ads</div>
-                <div>- Facebook Ads</div>
-                <div>- Google Ads</div>
+          {/* Mobile: stacked steps with visual icons */}
+          <div className="md:hidden space-y-4">
+            <article className="border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                  <Target className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-2">Strategy & Setup</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>Custom Strategy</div>
+                  <div>Audience Research</div>
+                  <div>Goal Setting</div>
+                </div>
               </div>
             </article>
-            <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
+            <div className="flex justify-center"><ArrowRight className="text-primary rotate-90 w-6 h-6" /></div>
 
-            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Consistent Content
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
-              </div>
-              <div className="text-muted-foreground">
-                <div>- 3 posts per week</div>
-                <div>- More engagement</div>
-                <div>- Increase growth</div>
-                <div>- Build trust</div>
+            <article className="border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                  <Megaphone className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-2">Targeted Ads</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>Meta Ads</div>
+                  <div>Google Ads</div>
+                  <div>Precision Targeting</div>
+                </div>
               </div>
             </article>
-            <div className="flex justify-center my-3"><ArrowRight className="text-brand-gold rotate-90" aria-hidden="true" /></div>
+            <div className="flex justify-center"><ArrowRight className="text-primary rotate-90 w-6 h-6" /></div>
 
-            <article className="border rounded-lg p-6 bg-card flex flex-col justify-center text-center">
-              <div className="text-foreground font-semibold text-lg mb-3 relative">
-                Optimization & Reporting
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
+            <article className="border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                  <Calendar className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-2">Content Creation</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>3 Posts Weekly</div>
+                  <div>Brand Building</div>
+                  <div>Engagement Growth</div>
+                </div>
               </div>
-              <div className="text-muted-foreground">
-                <div>- Ongoing tracking</div>
-                <div>- Improvements</div>
-                <div>- Refinements</div>
-                <div>- Monthly ROI</div>
+            </article>
+            <div className="flex justify-center"><ArrowRight className="text-primary rotate-90 w-6 h-6" /></div>
+
+            <article className="border rounded-lg p-6 bg-card hover-scale">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                  <TrendingUp className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-foreground font-semibold text-lg mb-2">Optimization</h3>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <div>Performance Tracking</div>
+                  <div>Monthly Reports</div>
+                  <div>ROI Optimization</div>
+                </div>
               </div>
             </article>
           </div>
