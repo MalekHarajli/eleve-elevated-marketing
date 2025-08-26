@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Megaphone, Users, Layout, LineChart, Target, BarChart3, ChevronDown, type LucideIcon } from "lucide-react";
 import { useState } from "react";
+import automotiveMarketingImage from "@/assets/automotive-digital-marketing.jpg";
 
 const ServiceCard = ({
   Icon,
@@ -98,6 +99,22 @@ const Services = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-3 sm:mb-4 leading-tight">SERVICES WE OFFER</h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
         </header>
+
+        {/* Visual Hero Section */}
+        <div className="relative rounded-lg overflow-hidden mb-10 sm:mb-12">
+          <img
+            src={automotiveMarketingImage}
+            alt="Automotive digital marketing visualization showing luxury cars with digital advertising elements"
+            className="w-full h-[300px] sm:h-[400px] object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
+          <div className="absolute inset-0 flex items-center justify-start p-6 sm:p-8">
+            <div className="max-w-lg">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-2">Digital Marketing Excellence</h2>
+              <p className="text-sm sm:text-base text-muted-foreground">Transforming automotive businesses through strategic social media advertising and data-driven campaigns.</p>
+            </div>
+          </div>
+        </div>
 
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           <ServiceCard

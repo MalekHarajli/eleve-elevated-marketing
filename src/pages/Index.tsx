@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import heroImage from "@/assets/hero-bmw-bright.jpg";
+import marketingFlowImage from "@/assets/marketing-flow-visual.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BarChart3, Users, Cog, ArrowRight, Target, Megaphone, Calendar, TrendingUp } from "lucide-react";
@@ -91,7 +92,19 @@ const Index = () => {
       {/* Process */}
       <section className="bg-background">
         <div className="container mx-auto px-4 pt-8 pb-8">
-          <h2 className="text-2xl font-semibold text-primary mb-8">How We Drive Results</h2>
+          <div className="flex flex-col lg:flex-row items-center gap-8 mb-8">
+            <div className="lg:w-1/2">
+              <h2 className="text-2xl font-semibold text-primary mb-4">How We Drive Results</h2>
+              <p className="text-muted-foreground">Our proven 4-step process transforms automotive businesses through strategic digital marketing, delivering measurable growth and ROI.</p>
+            </div>
+            <div className="lg:w-1/2">
+              <img
+                src={marketingFlowImage}
+                alt="Abstract automotive marketing flow visualization with data streams and growth charts"
+                className="w-full h-[250px] object-cover rounded-lg"
+              />
+            </div>
+          </div>
 
           {/* Desktop: horizontal steps with visual icons */}
           <div className="hidden md:grid md:grid-cols-4 gap-6">
