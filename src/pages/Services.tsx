@@ -96,7 +96,7 @@ const Services = () => {
               Learn more about us at AutoAdvance Marketing — Home
             </Link>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-3 sm:mb-4 leading-tight">SERVICES WE OFFER</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold mb-3 sm:mb-4 leading-tight text-primary">SERVICES <span className="text-white animate-glow-pulse">WE</span> OFFER</h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">Premier social media marketing agency delivering expert Facebook ads manager services, Instagram marketing, and comprehensive SMMA solutions designed for maximum ROI.</p>
         </header>
 
