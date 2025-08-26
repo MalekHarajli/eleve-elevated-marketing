@@ -92,16 +92,16 @@ const Index = () => {
       {/* Process */}
       <section className="bg-background">
         <div className="container mx-auto px-4 pt-8 pb-8">
-          <div className="flex flex-col lg:flex-row items-center gap-8 mb-8">
-            <div className="lg:w-1/2">
-              <h2 className="text-2xl font-semibold text-primary mb-4">How We Drive Results</h2>
-              <p className="text-muted-foreground">Our proven 4-step process transforms automotive businesses through strategic digital marketing, delivering measurable growth and ROI.</p>
+          <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 mb-6 sm:mb-8">
+            <div className="lg:w-1/2 text-center lg:text-left">
+              <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-3 sm:mb-4">How We Drive Results</h2>
+              <p className="text-sm sm:text-base text-muted-foreground">Our proven 4-step process transforms automotive businesses through strategic digital marketing, delivering measurable growth and ROI.</p>
             </div>
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 w-full">
               <img
                 src={marketingFlowImage}
                 alt="Abstract automotive marketing flow visualization with data streams and growth charts"
-                className="w-full h-[250px] object-cover rounded-lg"
+                className="w-full h-[180px] sm:h-[220px] md:h-[250px] object-cover rounded-lg"
               />
             </div>
           </div>

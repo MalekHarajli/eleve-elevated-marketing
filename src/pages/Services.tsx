@@ -101,17 +101,17 @@ const Services = () => {
         </header>
 
         {/* Visual Hero Section */}
-        <div className="relative rounded-lg overflow-hidden mb-10 sm:mb-12">
+        <div className="relative rounded-lg overflow-hidden mb-8 sm:mb-10">
           <img
             src={automotiveMarketingImage}
             alt="Automotive digital marketing visualization showing luxury cars with digital advertising elements"
-            className="w-full h-[300px] sm:h-[400px] object-cover"
+            className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-start p-6 sm:p-8">
-            <div className="max-w-lg">
-              <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-2">Digital Marketing Excellence</h2>
-              <p className="text-sm sm:text-base text-muted-foreground">Transforming automotive businesses through strategic social media advertising and data-driven campaigns.</p>
+          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/30 sm:from-background/80 sm:via-background/40 sm:to-transparent" />
+          <div className="absolute inset-0 flex items-center justify-center sm:justify-start p-4 sm:p-6 md:p-8">
+            <div className="max-w-lg text-center sm:text-left">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-foreground mb-2">Digital Marketing Excellence</h2>
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground">Transforming automotive businesses through strategic social media advertising and data-driven campaigns.</p>
             </div>
           </div>
         </div>
