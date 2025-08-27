@@ -5,6 +5,7 @@ import { Resend } from "npm:resend@2.0.0";
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Vary": "Origin",
 };
 
 interface ConsultationRequest {
@@ -16,6 +17,36 @@ interface ConsultationRequest {
   pageUrl: string;
   timestamp: string;
   companyWebsite?: string; // honeypot field
+}
+
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
+const requestsByIp = new Map<string, number[]>();
+
+function getClientIp(req: Request): string {
+  const xfwd = req.headers.get("x-forwarded-for") || "";
+  const ip = xfwd.split(",")[0]?.trim();
+  return ip || "unknown";
+}
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const arr = requestsByIp.get(ip) || [];
+  const recent = arr.filter((ts) => now - ts < RATE_LIMIT_WINDOW_MS);
+  recent.push(now);
+  requestsByIp.set(ip, recent);
+  return recent.length > RATE_LIMIT_MAX;
+}
+
+function sanitizeInput(value: string, max = 500): string {
+  if (typeof value !== "string") return "";
+  const trimmed = value.trim().slice(0, max);
+  // Strip HTML tags and control chars
+  return trimmed.replace(/<[^>]*>/g, "").replace(/[\u0000-\u001F\u007F]/g, "");
+}
+
+function isValidEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
 const handler = async (req: Request): Promise<Response> => {
@@ -44,8 +75,23 @@ const handler = async (req: Request): Promise<Response> => {
       });
     }
 
-    // Validate required fields
-    const { name, email, phone, message } = body;
+    // Rate limiting by IP
+    const ip = getClientIp(req);
+    if (isRateLimited(ip)) {
+      console.warn("Rate limit exceeded", { ip });
+      return new Response(JSON.stringify({ error: "Too many requests" }), {
+        status: 429,
+        headers: { "Content-Type": "application/json", ...corsHeaders },
+      });
+    }
+
+    // Sanitize and validate fields
+    const name = sanitizeInput(body.name, 80);
+    const email = (body.email || "").trim().toLowerCase();
+    const phone = sanitizeInput(body.phone, 40);
+    const message = sanitizeInput(body.message, 1000);
+    const businessName = body.businessName ? sanitizeInput(body.businessName, 120) : null;
+
     if (!name || !email || !phone || !message) {
       return new Response(JSON.stringify({ error: "Missing required fields: name, email, phone, message" }), {
         status: 400,
@@ -53,16 +99,13 @@ const handler = async (req: Request): Promise<Response> => {
       });
     }
 
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    if (!isValidEmail(email)) {
       return new Response(JSON.stringify({ error: "Invalid email format" }), {
         status: 400,
         headers: { "Content-Type": "application/json", ...corsHeaders },
       });
     }
 
-    // Validate message length
     if (message.length > 1000) {
       return new Response(JSON.stringify({ error: "Message must be 1000 characters or less" }), {
         status: 400,
@@ -84,9 +127,9 @@ const handler = async (req: Request): Promise<Response> => {
     const resend = new Resend(resendApiKey);
 
     // Send notification email to AutoAdvance
-    const emailSubject = `New Consultation — ${name}${body.businessName ? ` (${body.businessName})` : ''}`;
+    const emailSubject = `New Consultation — ${name}${businessName ? ` (${businessName})` : ''}`;
     const emailBody = `Name: ${name}
-Business: ${body.businessName || 'Not provided'}
+Business: ${businessName || 'Not provided'}
 Email: ${email}
 Phone: ${phone}
 
@@ -114,7 +157,7 @@ Submitted At: ${body.timestamp}`;
 
 Thank you for reaching out to AutoAdvance Marketing! 
 
-We've received your consultation request and are excited to learn more about ${body.businessName || 'your business'}.
+We've received your consultation request and are excited to learn more about ${businessName || 'your business'}.
 
 Our team will review your information and get back to you soon with next steps. We typically respond within 24 hours during business days.
 
@@ -150,7 +193,7 @@ If you have any questions, you can reply to this email or call us at +1(313)-970
         .from("leads")
         .insert({
           name,
-          business_name: body.businessName || null,
+          business_name: businessName,
           email,
           phone,
           message,

@@ -29,6 +29,13 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => (
   </div>
 );
 
+const maskName = (name: string) => {
+  const parts = (name || "").trim().split(/\s+/);
+  const first = parts[0] || "Client";
+  const lastInitial = parts[1] ? parts[1][0] + "." : "";
+  return [first, lastInitial].filter(Boolean).join(" ");
+};
+
 const ReviewsCarousel: React.FC = () => {
   const [api, setApi] = React.useState<CarouselApi | null>(null);
   const [groupSize, setGroupSize] = React.useState(1);
@@ -70,7 +77,7 @@ const ReviewsCarousel: React.FC = () => {
                   <StarRating rating={r.rating} />
                 </div>
                 <p className="mb-3">"{r.quote}"</p>
-                <cite className="text-muted-foreground not-italic mt-auto">— {r.name}</cite>
+                <cite className="text-muted-foreground not-italic mt-auto">— {maskName(r.name)}</cite>
               </article>
             </CarouselItem>
           ))}
