@@ -39,14 +39,23 @@ const OptimizedImage = ({
     if (loading === 'lazy') {
       const observer = new IntersectionObserver(
         (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              img.src = src;
-              observer.unobserve(img);
-            }
+          // Batch DOM updates to prevent forced reflows
+          requestAnimationFrame(() => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target as HTMLImageElement;
+                target.src = src;
+                observer.unobserve(target);
+              }
+            });
           });
         },
-        { threshold: 0.1, rootMargin: '50px' }
+        { 
+          threshold: 0.1, 
+          rootMargin: '50px',
+          // Use root viewport for better performance
+          root: null
+        }
       );
       
       observer.observe(img);
@@ -55,13 +64,19 @@ const OptimizedImage = ({
   }, [src, loading]);
 
   const handleLoad = () => {
-    setIsLoaded(true);
-    onLoad?.();
+    // Batch state updates to prevent forced reflows
+    requestAnimationFrame(() => {
+      setIsLoaded(true);
+      onLoad?.();
+    });
   };
 
   const handleError = () => {
-    setHasError(true);
-    onError?.();
+    // Batch state updates to prevent forced reflows
+    requestAnimationFrame(() => {
+      setHasError(true);
+      onError?.();
+    });
   };
 
   const imageProps = {
