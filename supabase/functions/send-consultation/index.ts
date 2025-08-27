@@ -89,7 +89,7 @@ const handler = async (req: Request): Promise<Response> => {
     const name = sanitizeInput(body.name, 80);
     const email = (body.email || "").trim().toLowerCase();
     const phone = sanitizeInput(body.phone, 40);
-    const message = sanitizeInput(body.message, 1000);
+    const message = sanitizeInput(body.message, 500);
     const businessName = body.businessName ? sanitizeInput(body.businessName, 120) : null;
 
     if (!name || !email || !phone || !message) {
@@ -106,8 +106,8 @@ const handler = async (req: Request): Promise<Response> => {
       });
     }
 
-    if (message.length > 1000) {
-      return new Response(JSON.stringify({ error: "Message must be 1000 characters or less" }), {
+    if (message.length > 500) {
+      return new Response(JSON.stringify({ error: "Message must be 500 characters or less" }), {
         status: 400,
         headers: { "Content-Type": "application/json", ...corsHeaders },
       });

@@ -38,8 +38,8 @@ const Contact = () => {
       }
 
       // Validate message length
-      if (data.message.length > 1000) {
-        throw new Error('Message must be 1000 characters or less');
+      if (data.message.length > 500) {
+        throw new Error('Message must be 500 characters or less');
       }
 
       console.log('Contact form: invoking send-consultation with data', {
@@ -175,8 +175,8 @@ const Contact = () => {
               </div>
             </div>
             <div>
-              <Label htmlFor="message" className="text-sm font-medium">Message * <span className="text-xs text-muted-foreground">(max 1000 characters)</span></Label>
-              <Textarea id="message" name="message" required maxLength={1000} className="min-h-[120px] sm:min-h-[140px] p-3 mt-1 text-sm" />
+              <Label htmlFor="message" className="text-sm font-medium">Message * <span className="text-xs text-muted-foreground">(max 500 characters)</span></Label>
+              <Textarea id="message" name="message" required maxLength={500} className="min-h-[120px] sm:min-h-[140px] p-3 mt-1 text-sm" />
             </div>
             <Button type="submit" disabled={isSubmitting} className="btn-glow w-full sm:w-auto text-sm sm:text-base px-6 py-3">
               {isSubmitting ? (
