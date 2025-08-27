@@ -4,26 +4,38 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { Suspense, lazy } from "react";
 import Index from "./pages/Index";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
-import ThankYou from "./pages/ThankYou";
-import NotFound from "./pages/NotFound";
-import TintShop from "./pages/industries/TintShop";
-import CollisionRepair from "./pages/industries/CollisionRepair";
-import OilChange from "./pages/industries/OilChange";
-import TireShop from "./pages/industries/TireShop";
-import CarDealership from "./pages/industries/CarDealership";
-import Detailing from "./pages/industries/Detailing";
-import BrakeShop from "./pages/industries/BrakeShop";
-import TransmissionShop from "./pages/industries/TransmissionShop";
-import WrapShop from "./pages/industries/WrapShop";
-import AutoGlass from "./pages/industries/AutoGlass";
-import CarAudio from "./pages/industries/CarAudio";
-import CustomShop from "./pages/industries/CustomShop";
 import SiteHeader from "./components/layout/SiteHeader";
 import SiteFooter from "./components/layout/SiteFooter";
 import ScrollToTop from "./components/ScrollToTop";
+
+// Lazy load non-critical routes for code splitting
+const Services = lazy(() => import("./pages/Services"));
+const Contact = lazy(() => import("./pages/Contact"));
+const ThankYou = lazy(() => import("./pages/ThankYou"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+
+// Lazy load industry pages
+const TintShop = lazy(() => import("./pages/industries/TintShop"));
+const CollisionRepair = lazy(() => import("./pages/industries/CollisionRepair"));
+const OilChange = lazy(() => import("./pages/industries/OilChange"));
+const TireShop = lazy(() => import("./pages/industries/TireShop"));
+const CarDealership = lazy(() => import("./pages/industries/CarDealership"));
+const Detailing = lazy(() => import("./pages/industries/Detailing"));
+const BrakeShop = lazy(() => import("./pages/industries/BrakeShop"));
+const TransmissionShop = lazy(() => import("./pages/industries/TransmissionShop"));
+const WrapShop = lazy(() => import("./pages/industries/WrapShop"));
+const AutoGlass = lazy(() => import("./pages/industries/AutoGlass"));
+const CarAudio = lazy(() => import("./pages/industries/CarAudio"));
+const CustomShop = lazy(() => import("./pages/industries/CustomShop"));
+
+// Loading fallback component
+const PageLoader = () => (
+  <div className="flex items-center justify-center min-h-[50vh]">
+    <div className="animate-pulse text-muted-foreground">Loading...</div>
+  </div>
+);
 
 const queryClient = new QueryClient();
 
@@ -36,26 +48,28 @@ const App = () => (
         <BrowserRouter>
           <ScrollToTop />
           <SiteHeader />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/tint-shop-marketing" element={<TintShop />} />
-            <Route path="/collision-repair-marketing" element={<CollisionRepair />} />
-            <Route path="/oil-change-marketing" element={<OilChange />} />
-            <Route path="/tire-shop-marketing" element={<TireShop />} />
-            <Route path="/car-dealership-marketing" element={<CarDealership />} />
-            <Route path="/detailing-marketing" element={<Detailing />} />
-            <Route path="/brake-shop-marketing" element={<BrakeShop />} />
-            <Route path="/transmission-shop-marketing" element={<TransmissionShop />} />
-            <Route path="/wrap-shop-marketing" element={<WrapShop />} />
-            <Route path="/auto-glass-marketing" element={<AutoGlass />} />
-            <Route path="/car-audio-marketing" element={<CarAudio />} />
-            <Route path="/custom-shop-marketing" element={<CustomShop />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/thank-you" element={<ThankYou />} />
+              <Route path="/tint-shop-marketing" element={<TintShop />} />
+              <Route path="/collision-repair-marketing" element={<CollisionRepair />} />
+              <Route path="/oil-change-marketing" element={<OilChange />} />
+              <Route path="/tire-shop-marketing" element={<TireShop />} />
+              <Route path="/car-dealership-marketing" element={<CarDealership />} />
+              <Route path="/detailing-marketing" element={<Detailing />} />
+              <Route path="/brake-shop-marketing" element={<BrakeShop />} />
+              <Route path="/transmission-shop-marketing" element={<TransmissionShop />} />
+              <Route path="/wrap-shop-marketing" element={<WrapShop />} />
+              <Route path="/auto-glass-marketing" element={<AutoGlass />} />
+              <Route path="/car-audio-marketing" element={<CarAudio />} />
+              <Route path="/custom-shop-marketing" element={<CustomShop />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
           <SiteFooter />
         </BrowserRouter>
       </TooltipProvider>
