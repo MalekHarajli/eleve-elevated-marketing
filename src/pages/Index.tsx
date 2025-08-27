@@ -19,13 +19,13 @@ const Index = () => {
           <meta property="og:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, weekly content, and clear ROI reporting." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://autoadvancemarketing.com/" />
-          <meta property="og:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
+          <meta property="og:image" content="https://autoadvancemarketing.com/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="AutoAdvance Marketing (Auto Advance Marketing) — Official Site, Detroit MI" />
           <meta name="twitter:description" content="AutoAdvance Marketing helps Detroit businesses grow with SMMA and data-driven Facebook & Instagram ads, weekly content, and clear ROI reporting." />
-          <meta name="twitter:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
+          <meta name="twitter:image" content="https://autoadvancemarketing.com/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png" />
 
           {/* Structured Data - Organization + WebSite */}
           <script type="application/ld+json">{JSON.stringify({
@@ -34,7 +34,7 @@ const Index = () => {
             name: "AutoAdvance Marketing",
             alternateName: ["Auto Advance Marketing", "AutoAdvanceMarketing"],
             url: "https://autoadvancemarketing.com/",
-            logo: "https://autoadvancemarketing.com/favicon-48x48.png",
+            logo: "https://autoadvancemarketing.com/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png",
             sameAs: []
           })}</script>
         </Helmet>
@@ -43,8 +43,10 @@ const Index = () => {
       <section className="relative">
         <img
           src={heroImage}
-           alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
+          alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
           className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 overlay-soft" />
         <div className="absolute inset-0">
@@ -102,6 +104,8 @@ const Index = () => {
                 src={marketingFlowImage}
                 alt="Abstract automotive marketing flow visualization with data streams and growth charts"
                 className="w-full h-[180px] sm:h-[220px] md:h-[250px] object-cover rounded-lg"
+                loading="lazy"
+                fetchPriority="low"
               />
             </div>
           </div>

@@ -69,13 +69,13 @@ const Services = () => {
           <meta property="og:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://autoadvancemarketing.com/services" />
-          <meta property="og:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
+          <meta property="og:image" content="https://autoadvancemarketing.com/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Services — SMMA, Facebook & Instagram Ads" />
           <meta name="twitter:description" content="SMMA services: Meta ads management, Instagram marketing, and full-funnel strategy for growth." />
-          <meta name="twitter:image" content="https://autoadvancemarketing.com/favicon-48x48.png" />
+          <meta name="twitter:image" content="https://autoadvancemarketing.com/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png" />
 
           {/* Structured Data */}
           <script type="application/ld+json">{JSON.stringify({
@@ -106,6 +106,8 @@ const Services = () => {
             src={automotiveMarketingImage}
             alt="Automotive digital marketing visualization showing luxury cars with digital advertising elements"
             className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover"
+            loading="lazy"
+            fetchPriority="low"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/30 sm:from-background/80 sm:via-background/40 sm:to-transparent" />
           <div className="absolute inset-0 flex items-center justify-center sm:justify-start p-4 sm:p-6 md:p-8">
