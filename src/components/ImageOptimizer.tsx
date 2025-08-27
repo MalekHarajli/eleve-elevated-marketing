@@ -10,6 +10,8 @@ interface OptimizedImageProps {
   height?: number;
   onLoad?: () => void;
   onError?: () => void;
+  sizes?: string;
+  srcSet?: string;
 }
 
 const OptimizedImage = ({ 
@@ -21,7 +23,9 @@ const OptimizedImage = ({
   width,
   height,
   onLoad,
-  onError
+  onError,
+  sizes,
+  srcSet
 }: OptimizedImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -70,6 +74,8 @@ const OptimizedImage = ({
     ...(width && { width }),
     ...(height && { height }),
     ...(fetchPriority !== 'auto' && { fetchPriority }),
+    ...(sizes && { sizes }),
+    ...(srcSet && { srcSet }),
   };
 
   if (hasError) {
