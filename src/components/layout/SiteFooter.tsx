@@ -8,12 +8,15 @@ const SiteFooter = () => {
       <div className="container mx-auto py-6 sm:py-10 px-4 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         <div className="sm:col-span-2 lg:col-span-1">
           <h3 className="text-base sm:text-lg font-semibold flex items-center gap-2 whitespace-nowrap">
-            <img 
-              src="/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png" 
-              alt="AutoAdvance Marketing logo" 
-              className="h-5 w-5 sm:h-6 sm:w-6 object-contain" 
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/lovable-uploads/logo-optimized.webp" type="image/webp" />
+              <img 
+                src="/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png" 
+                alt="AutoAdvance Marketing logo" 
+                className="h-5 w-5 sm:h-6 sm:w-6 object-contain" 
+                loading="lazy"
+              />
+            </picture>
             <Link to="/" className="relative hover:text-primary transition-colors">
               <span className="text-foreground text-sm sm:text-base">AutoAdvance <span className="text-primary">Marketing</span></span>
               <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
