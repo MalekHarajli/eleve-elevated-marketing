@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import heroImage from "@/assets/hero-bmw-bright.jpg";
 import heroBmwOptimized from "@/assets/hero-bmw-optimized.webp";
 import marketingFlowImage from "@/assets/marketing-flow-visual.jpg";
-import marketingFlowWebP from "@/assets/marketing-flow-visual.webp";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BarChart3, Users, Cog, ArrowRight, Target, Megaphone, Calendar, TrendingUp } from "lucide-react";
@@ -43,17 +42,14 @@ const Index = () => {
 
       {/* Hero */}
       <section className="relative">
-        <picture>
-          <source srcSet={heroBmwOptimized} type="image/webp" />
-          <img
-            src={heroImage}
-            alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
-            className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
-            loading="eager"
-            fetchPriority="high"
-            decoding="sync"
-          />
-        </picture>
+        <img
+          src={heroImage}
+          alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
+          className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
+          loading="eager"
+          fetchPriority="high"
+          decoding="sync"
+        />
         <div className="absolute inset-0 overlay-soft" />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex items-center">
@@ -106,19 +102,16 @@ const Index = () => {
               <p className="text-sm sm:text-base text-muted-foreground">Our proven 4-step process transforms automotive businesses through strategic digital marketing, delivering measurable growth and ROI.</p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <picture>
-                <source srcSet={marketingFlowWebP} type="image/webp" />
-                <img
-                  src={marketingFlowImage}
-                  alt="Abstract automotive marketing flow visualization with data streams and growth charts"
-                  className="w-full h-[180px] sm:h-[220px] md:h-[250px] object-cover rounded-lg"
-                  loading="lazy"
-                  fetchPriority="low"
-                  width="380"
-                  height="285"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </picture>
+              <img
+                src={marketingFlowImage}
+                alt="Abstract automotive marketing flow visualization with data streams and growth charts"
+                className="w-full h-[180px] sm:h-[220px] md:h-[250px] object-cover rounded-lg"
+                loading="lazy"
+                fetchPriority="low"
+                width="380"
+                height="285"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
 
