@@ -109,6 +109,47 @@
     
     <!-- Preload critical images for LCP optimization -->
     <link rel="preload" href="/assets/hero-bmw-bright-CtRn4JGF.jpg" as="image" type="image/jpeg" fetchpriority="high">
+    
+    <!-- Inline critical CSS for LCP optimization -->
+    <style>
+      /* Critical above-the-fold styles */
+      #root { min-height: 100vh; }
+      .relative { position: relative; }
+      .w-full { width: 100%; }
+      .h-\[60vh\] { height: 60vh; }
+      .object-cover { object-fit: cover; object-position: center; }
+      .absolute { position: absolute; }
+      .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+      .container { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+      .mx-auto { margin-left: auto; margin-right: auto; }
+      .px-4 { padding-left: 1rem; padding-right: 1rem; }
+      .h-full { height: 100%; }
+      .flex { display: flex; }
+      .items-center { align-items: center; }
+      .max-w-3xl { max-width: 48rem; }
+      .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+      .font-semibold { font-weight: 600; }
+      .leading-tight { line-height: 1.25; }
+      .mb-3 { margin-bottom: 0.75rem; }
+      .mb-4 { margin-bottom: 1rem; }
+      .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+      .max-w-2xl { max-width: 42rem; }
+      .overlay-soft { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)); }
+      @media (min-width: 640px) {
+        .sm\:h-\[60vh\] { height: 60vh; }
+        .sm\:text-5xl { font-size: 3rem; line-height: 1; }
+        .sm\:mb-4 { margin-bottom: 1rem; }
+        .sm\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+      }
+      @media (min-width: 768px) {
+        .md\:h-\[70vh\] { height: 70vh; }
+        .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
+        .md\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+      }
+      @media (min-width: 1024px) {
+        .lg\:h-\[80vh\] { height: 80vh; }
+      }
+    </style>
   </head>
 
   <body>

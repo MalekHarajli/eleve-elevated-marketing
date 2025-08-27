@@ -48,6 +48,7 @@ const Index = () => {
           className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
           loading="eager"
           fetchPriority="high"
+          decoding="sync"
         />
         <div className="absolute inset-0 overlay-soft" />
         <div className="absolute inset-0">
