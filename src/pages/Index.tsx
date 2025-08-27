@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import heroImage from "@/assets/hero-bmw-bright.jpg";
 import heroBmwOptimized from "@/assets/hero-bmw-optimized.webp";
-import marketingFlowImage from "@/assets/marketing-flow-visual.jpg";
+import futuristicDashboard from "@/assets/futuristic-marketing-dashboard.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BarChart3, Users, Cog, ArrowRight, Target, Megaphone, Calendar, TrendingUp } from "lucide-react";
@@ -103,8 +103,8 @@ const Index = () => {
             </div>
             <div className="lg:w-1/2 w-full">
               <img
-                src={marketingFlowImage}
-                alt="Abstract automotive marketing flow visualization with data streams and growth charts"
+                src={futuristicDashboard}
+                alt="Futuristic automotive marketing dashboard with holographic data visualization and performance metrics"
                 className="w-full h-[180px] sm:h-[220px] md:h-[250px] object-cover rounded-lg"
                 loading="lazy"
                 fetchPriority="low"
