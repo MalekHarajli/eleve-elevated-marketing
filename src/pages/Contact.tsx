@@ -132,7 +132,7 @@ const Contact = () => {
 
       <section className="container mx-auto px-4 py-12 sm:py-16">
         <header className="max-w-2xl mb-6 sm:mb-8 text-center sm:text-left">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-heading font-semibold tracking-tight text-muted-foreground mb-3 sm:mb-4 leading-tight">Contact <span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">Our</span> Specialists</h1>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-heading font-semibold tracking-tight text-muted-foreground mb-3 sm:mb-4 leading-tight whitespace-nowrap">Contact <span style={{color: "hsl(var(--primary))"}} className="animate-glow-pulse">Our</span> Specialists</h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">Get expert Facebook ads manager services and social media marketing agency solutions. Free consultation with a top-rated marketing agency near me.</p>
         </header>
 
