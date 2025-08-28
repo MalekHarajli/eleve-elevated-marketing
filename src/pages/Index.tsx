@@ -49,7 +49,7 @@ const Index = () => {
             alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
             className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
             loading="eager"
-            fetchPriority="high"
+            
             decoding="sync"
             width="1920"
             height="1080"
@@ -112,7 +112,7 @@ const Index = () => {
                 alt="Auto repair shop and service business Facebook Instagram marketing dashboard showing campaign performance and lead generation results"
                 className="w-full h-[180px] sm:h-[220px] md:h-[250px] object-cover rounded-lg"
                 loading="lazy"
-                fetchPriority="low"
+                
                 width="380"
                 height="285"
                 sizes="(max-width: 768px) 100vw, 50vw"
