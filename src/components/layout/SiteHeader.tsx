@@ -6,15 +6,12 @@ const SiteHeader = () => {
     <header className="border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <nav className="container mx-auto flex items-center justify-between py-3 sm:py-4 px-4">
         <Link to="/" className="flex items-center gap-2" aria-label="AutoAdvance Marketing Home">
-          <picture>
-            <source srcSet="https://isckfinksgotymwusoeb.supabase.co/storage/v1/object/public/company-assets/logo.webp" type="image/webp" />
-            <img 
-              src="https://isckfinksgotymwusoeb.supabase.co/storage/v1/object/public/company-assets/logo.png" 
-              alt="AutoAdvance Marketing logo" 
-              className="h-6 w-6 sm:h-8 sm:w-8 object-contain" 
-              loading="eager"
-            />
-          </picture>
+          <img 
+            src="/lovable-uploads/a4e7c9d1-f477-4c80-8f82-bdc6b0bff1fc.png" 
+            alt="AutoAdvance Marketing logo with blue A design" 
+            className="h-6 w-6 sm:h-8 sm:w-8 object-contain" 
+            loading="eager"
+          />
           <span className="text-sm sm:text-xl font-heading font-semibold tracking-tight whitespace-nowrap relative">
             <span className="text-foreground">AutoAdvance <span className="text-primary">Marketing</span></span>
             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
