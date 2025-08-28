@@ -7,13 +7,12 @@ const SiteHeader = () => {
       <nav className="container mx-auto flex items-center justify-between py-3 sm:py-4 px-4">
         <Link to="/" className="flex items-center gap-2" aria-label="AutoAdvance Marketing Home">
           <picture>
-            <source srcSet="/lovable-uploads/logo-optimized.webp" type="image/webp" />
+            <source srcSet="https://isckfinksgotymwusoeb.supabase.co/storage/v1/object/public/company-assets/logo.webp" type="image/webp" />
             <img 
-              src="/lovable-uploads/a1dc12e6-6865-40ce-bd26-6da442cf8c21.png" 
+              src="https://isckfinksgotymwusoeb.supabase.co/storage/v1/object/public/company-assets/logo.png" 
               alt="AutoAdvance Marketing logo" 
               className="h-6 w-6 sm:h-8 sm:w-8 object-contain" 
               loading="eager"
-              fetchPriority="high"
             />
           </picture>
           <span className="text-sm sm:text-xl font-heading font-semibold tracking-tight whitespace-nowrap relative">
