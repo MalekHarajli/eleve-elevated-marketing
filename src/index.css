@@ -107,6 +107,11 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    /* Performance optimizations */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+    contain: layout style paint;
   }
 
   h1, h2, h3, h4 {
@@ -117,6 +122,7 @@ All colors MUST be HSL.
 @layer utilities {
   .hover-scale {
     @apply transition-transform duration-200;
+    will-change: transform;
   }
   .hover-scale:hover {
     transform: scale(1.03);

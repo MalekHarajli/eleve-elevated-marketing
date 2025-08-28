@@ -42,14 +42,19 @@ const Index = () => {
 
       {/* Hero */}
       <section className="relative">
-        <img
-          src={heroImage}
-          alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
-          className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
-          loading="eager"
-          fetchPriority="high"
-          decoding="sync"
-        />
+        <picture>
+          <source srcSet={heroBmwOptimized} type="image/webp" />
+          <img
+            src={heroImage}
+            alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
+            className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+            width="1920"
+            height="1080"
+          />
+        </picture>
         <div className="absolute inset-0 overlay-soft" />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex items-center">
@@ -111,6 +116,7 @@ const Index = () => {
                 width="380"
                 height="285"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                decoding="async"
               />
             </div>
           </div>

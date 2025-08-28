@@ -88,7 +88,7 @@ const OptimizedImage = ({
     onError: handleError,
     ...(width && { width }),
     ...(height && { height }),
-    ...(fetchPriority !== 'auto' && { fetchPriority }),
+    ...(fetchPriority !== 'auto' && { fetchpriority: fetchPriority }),
     ...(sizes && { sizes }),
     ...(srcSet && { srcSet }),
   };
