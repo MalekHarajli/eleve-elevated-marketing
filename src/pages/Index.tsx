@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import heroImage from "@/assets/hero-bmw-bright.jpg";
-import heroBmwOptimized from "@/assets/hero-bmw-optimized.webp";
+import heroImage from "@/assets/hero-futuristic-blue.jpg";
+import heroBmwOptimized from "@/assets/hero-futuristic-blue.webp";
 import autoServiceDashboard from "@/assets/auto-service-marketing-dashboard.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -46,7 +46,7 @@ const Index = () => {
           <source srcSet={heroBmwOptimized} type="image/webp" />
           <img
             src={heroImage}
-            alt="High-end BMW front view with bright headlight for AutoAdvance Marketing"
+            alt="Futuristic automotive technology with blue lighting and digital effects for AutoAdvance Marketing"
             className="w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] object-cover"
             loading="eager"
             
