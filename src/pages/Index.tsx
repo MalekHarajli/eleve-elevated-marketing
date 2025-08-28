@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import heroImage from "@/assets/hero-bmw.jpg";
+import heroImage from "@/assets/hero-bmw-bright.jpg";
 import heroBmwOptimized from "@/assets/hero-bmw-optimized.webp";
 import autoServiceDashboard from "@/assets/auto-service-marketing-dashboard.jpg";
 import { Button } from "@/components/ui/button";
